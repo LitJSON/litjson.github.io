@@ -4,7 +4,7 @@ category: Announcements
 author: devlead
 ---
 
-After the project's been a bit dormant for a while we're now happy to announce that [LitJSON](https://github.com/LitJSON/litjson) has now moved to it's own [LitJSON](https://github.com/litjson) GitHub organization, to ensure it's not on one individuals account ensuring the longevity of project.
+After the project's been a bit dormant for a while we're now happy to announce that [LitJSON](https://github.com/LitJSON/litjson) has now moved to it's own [LitJSON](https://github.com/litjson) GitHub organization.
 
 Together with the new organization we're now launching this new site ( [litjson.net](https://litjson.net) ), which will host our [documentation](/docs), [API reference](/api) and [blog posts](/blog). A [litjsonnet](https://twitter.com/litjsonnet) Twitter account, with the intention to post any announcements there too.
 
