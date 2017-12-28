@@ -286,3 +286,12 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+[Tt]ools/*
+![Tt]ools/packages.config
+[Oo]utput/
+[Rr]elease/
+
+config.wyam.dll
+config.wyam.hash
+packages.xml

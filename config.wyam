@@ -1,0 +1,9 @@
+#recipe Docs
+
+Settings[Keys.Host] = "litjson.net";
+Settings[Keys.LinksUseHttps] = true;
+Settings[DocsKeys.Title] = "LitJSON";
+Settings[DocsKeys.Logo] = "/assets/img/logo_64.png";
+Settings[DocsKeys.SourceFiles] = "../release/repo/src/**/{!bin,!obj,!packages,!*.Tests,}/**/*.cs";
+Settings[DocsKeys.IncludeDateInPostPath] = true;
+Settings[DocsKeys.BaseEditUrl] = "https://github.com/LitJSON/litjson.github.io/blob/develop/input/";

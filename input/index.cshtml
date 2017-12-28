@@ -1,0 +1,30 @@
+Title: Home
+NoSidebar: true
+NoContainer: true
+NoGutter: true
+---
+<div class="jumbotron">
+    <div class="container">
+        <h1>What is LitjSON?</h1>
+        <p>A .Net library to handle conversions from and to JSON (JavaScript Object Notation) strings.</p>
+        <p>LitJSON is written in C#, and it’s intended to be small, fast and easy to use.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="/docs/tutorials/getting-started" role="button">Get Started &raquo;</a>
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <h2>Blog posts</h2>
+        <div class="col-xs-12 col-sm-6">
+            @foreach(IDocument doc in Documents[Docs.BlogPosts].Take(5))
+            {
+                <h3><a href="@Context.GetLink(doc)">@doc.WithoutSettings.String(DocsKeys.Title)</a> - <i class="fa fa-calendar"></i> Published: @(doc.Get<DateTime>(DocsKeys.Published).ToLongDateString(Context))</h3>
+            }
+        </div>
+        <div class="col-sm-6 hidden-xs">
+            <img style="width: 128px;height:128px" src="/assets/img/logo.png" alt=""/>
+        </div>
+    </div>
+</div>
