@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+	<channel>
+		<title>LitJSON</title>
+		<link>https://litjson.net/</link>
+		<description />
+		<copyright>2017</copyright>
+		<pubDate>Thu, 28 Dec 2017 11:46:17 GMT</pubDate>
+		<lastBuildDate>Thu, 28 Dec 2017 11:46:17 GMT</lastBuildDate>
+		<item>
+			<title>New organization and web site</title>
+			<link>https://litjson.net/blog/2017/12/new-org-and-site</link>
+			<description>&lt;p&gt;After the project's been a bit dormant for a while we're now happy to announce that &lt;a href="https://github.com/LitJSON/litjson"&gt;LitJSON&lt;/a&gt; has now moved to it's own &lt;a href="https://github.com/litjson"&gt;LitJSON&lt;/a&gt; GitHub organization, to ensure it's not on one individuals account ensuring the longevity of project.&lt;/p&gt;</description>
+			<author>devlead</author>
+			<guid>https://litjson.net/blog/2017/12/new-org-and-site</guid>
+			<pubDate>Thu, 28 Dec 2017 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;After the project's been a bit dormant for a while we're now happy to announce that &lt;a href="https://github.com/LitJSON/litjson"&gt;LitJSON&lt;/a&gt; has now moved to it's own &lt;a href="https://github.com/litjson"&gt;LitJSON&lt;/a&gt; GitHub organization, to ensure it's not on one individuals account ensuring the longevity of project.&lt;/p&gt;
+&lt;p&gt;Together with the new organization we're now launching this new site ( &lt;a href="https://litjson.net"&gt;litjson.net&lt;/a&gt; ), which will host our &lt;a href="/docs"&gt;documentation&lt;/a&gt;, &lt;a href="/api"&gt;API reference&lt;/a&gt; and &lt;a href="/blog"&gt;blog posts&lt;/a&gt;. A &lt;a href="https://twitter.com/litjsonnet"&gt;litjsonnet&lt;/a&gt; Twitter account, with the intention to post any announcements there too.&lt;/p&gt;
+&lt;p&gt;For community discussions we've added a &lt;a href="https://gitter.im/LitJSON/lobby"&gt;LitJSON/lobby&lt;/a&gt; Gitter channel, which i great for questions and real-time discussions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/devlead"&gt;Mattias Karlsson&lt;/a&gt; as been added as a maintainer to the project and he'll try to triage pull request and issues so we in the near future can get out a new release with some long awaited bug fixes.&lt;/p&gt;
+&lt;p&gt;Post that we're planning to focus on a release to add support for .NET Standard so LitJSON can be easily consumable from i.e. .NET Core and UWP too.&lt;/p&gt;
+&lt;p&gt;And at the same time we'll be adding cross platform continuous integration and support for continuous deployment of releases to NuGet.org and each commit to MyGet.org.&lt;/p&gt;
+</content:encoded>
+		</item>
+	</channel>
+</rss>

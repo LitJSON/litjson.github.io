@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<link rel="self" href="https://litjson.net/" />
+	<id>https://litjson.net/</id>
+	<title>LitJSON</title>
+	<rights>2017</rights>
+	<updated>2017-12-28T11:46:17Z</updated>
+	<entry>
+		<author>
+			<name>devlead</name>
+		</author>
+		<link href="https://litjson.net/blog/2017/12/new-org-and-site" />
+		<id>https://litjson.net/blog/2017/12/new-org-and-site</id>
+		<title>New organization and web site</title>
+		<updated>2017-12-28T00:00:00Z</updated>
+		<content>&lt;p&gt;After the project's been a bit dormant for a while we're now happy to announce that &lt;a href="https://github.com/LitJSON/litjson"&gt;LitJSON&lt;/a&gt; has now moved to it's own &lt;a href="https://github.com/litjson"&gt;LitJSON&lt;/a&gt; GitHub organization, to ensure it's not on one individuals account ensuring the longevity of project.&lt;/p&gt;
+&lt;p&gt;Together with the new organization we're now launching this new site ( &lt;a href="https://litjson.net"&gt;litjson.net&lt;/a&gt; ), which will host our &lt;a href="/docs"&gt;documentation&lt;/a&gt;, &lt;a href="/api"&gt;API reference&lt;/a&gt; and &lt;a href="/blog"&gt;blog posts&lt;/a&gt;. A &lt;a href="https://twitter.com/litjsonnet"&gt;litjsonnet&lt;/a&gt; Twitter account, with the intention to post any announcements there too.&lt;/p&gt;
+&lt;p&gt;For community discussions we've added a &lt;a href="https://gitter.im/LitJSON/lobby"&gt;LitJSON/lobby&lt;/a&gt; Gitter channel, which i great for questions and real-time discussions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/devlead"&gt;Mattias Karlsson&lt;/a&gt; as been added as a maintainer to the project and he'll try to triage pull request and issues so we in the near future can get out a new release with some long awaited bug fixes.&lt;/p&gt;
+&lt;p&gt;Post that we're planning to focus on a release to add support for .NET Standard so LitJSON can be easily consumable from i.e. .NET Core and UWP too.&lt;/p&gt;
+&lt;p&gt;And at the same time we'll be adding cross platform continuous integration and support for continuous deployment of releases to NuGet.org and each commit to MyGet.org.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;After the project's been a bit dormant for a while we're now happy to announce that &lt;a href="https://github.com/LitJSON/litjson"&gt;LitJSON&lt;/a&gt; has now moved to it's own &lt;a href="https://github.com/litjson"&gt;LitJSON&lt;/a&gt; GitHub organization, to ensure it's not on one individuals account ensuring the longevity of project.&lt;/p&gt;</summary>
+	</entry>
+</feed>
