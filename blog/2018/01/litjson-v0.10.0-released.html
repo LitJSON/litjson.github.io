@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>LitJSON - December, 2017</title>
+        <title>LitJSON - LitJSON v0.10.0 released</title>
         <link href="/assets/css/mermaid.css" rel="stylesheet">
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -79,6 +79,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
+        <div><p><a href="https://github.com/LitJSON/litjson.github.io/blob/develop/input/blog/2018-01-04-litjson-v0.10.0-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -94,7 +95,7 @@
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
         <li><a href="/blog/archive/2018/01">January, 2018</a></li>
-        <li class="selected"><a href="/blog/archive/2017/12">December, 2017</a></li>
+        <li><a href="/blog/archive/2017/12">December, 2017</a></li>
     
     <li class="header"><i class="fa fa-user"></i> Authors</li>    
         <li><a href="/blog/author/devlead">devlead</a></li>
@@ -110,33 +111,61 @@
 
 
 	<section class="content-header">
-		<h1>December, 2017</h1>
+		<h1>LitJSON v0.10.0 released</h1>
 	</section>
 	<section class="content">
 		
 
-        <h2><a href="/blog/2017/12/new-org-and-site">New organization and web site</a></h2>
+
 <dl class="dl-horizontal">
     <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Thursday, December 28, 2017</dd>
+    <dd>Thursday, January 4, 2018</dd>
         <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/blog/Announcements">Announcements</a></dd>
+        <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
             <dt><i class="fa fa-user"></i> Author</dt>
         <dd><a href="/blog/author/devlead">devlead</a></dd>
-</dl>            <div>
-                <p>After the project's been a bit dormant for a while we're now happy to announce that <a href="https://github.com/LitJSON/litjson">LitJSON</a> has now moved to it's own <a href="https://github.com/litjson">LitJSON</a> GitHub organization.</p>
-                <a href="/blog/2017/12/new-org-and-site">Read more...</a>
-            </div>
-        <hr />
-    <nav>
-        <ul class="pager">
-            <li class="previous">                
-            </li>
-            <li class="next">
-            </li>
-        </ul>
-    </nav>
+</dl>
 
+<p>Version v0.10.0 of LitJSON has been released.</p>
+<p>This is the first release under the new LitJSON organization, it includes a few new major improvements and a couple of bug fixes.</p>
+<p><strong>Features</strong></p>
+<p>LitJSON has now been ported to .NET Core, which means it's now targets</p>
+<ul>
+<li>.NET Standard 2.0</li>
+<li>.NET Standard 1.5</li>
+<li>.NET Framework 4.5</li>
+</ul>
+<p>Which makes it available to most of the .NET runtimes out there, please raise an issue/pullrequest if your missing any target.</p>
+<p>The <a href="https://litjson.net/api/LitJson/JsonWriter">JsonWriter</a> now has <a href="https://litjson.net/api/LitJson/JsonWriter/B6391FAB">LowerCaseProperties</a> property which forces all properties to be outputted lowercase.</p>
+<p>The code base is now compatible and compilable under SQLCLR, which makes it an option for handling JSON with your CLR procedures and functions in SQL Server 2012 and up.</p>
+<p><strong>Bugfixes</strong></p>
+<p>Long/Int64 is now handled more robust and can be upcasted from int.</p>
+<p>Numbers are now handled in a culture invariant way, which means things will work the same regardless of culture on the clients maachine.</p>
+<p><strong>This release's contributors</strong></p>
+<ul>
+<li><a href="https://github.com/devlead">devlead</a></li>
+<li><a href="https://github.com/ikasoumen4">ikasoumen4</a></li>
+<li><a href="https://github.com/zhenlinyang">zhenlinyang</a></li>
+</ul>
+<p>A big thanks to all LitJSON contributors and users, it wouldn't have been possible without you!</p>
+<p><strong>Housekeeping</strong></p>
+<p>There's been plenty of yak shaving before this release, to improve quality and simplify contribution to the project.</p>
+<p>The project is now compiling multitargeted using .NET Core CLI, unit tests have migrated to work with newer versions of NUnit and the .NET CLI. This aslo means there's now MSBuild solution and project files, so you can open and compile the project in Visual Studio, VisualStudio Mac, VSCode and Jetbrains Rider.</p>
+<p>A <a href="https://cakebuild.net">Cake</a> build script has been added to orchestrate the build, test, packageing and deployment of the project. Ivoking the Cake build script is easiest done via the bootstrappers <code>build.ps1</code> (Windows) or <code>build.sh</code> (MacOS/Linux), which will fetch the Cake version and the .NET SDK needed to build the project.</p>
+<p>LitJSON now has CI configured on <a href="https://ci.appveyor.com/project/litjson/litjson/branch/develop">AppVeyor</a> and <a href="https://travis-ci.org/LitJSON/litjson">TravisCI</a>, which means each commit and pull requests now continously builds on Linux, MacOS and Windows.</p>
+<p>We now automatically deploy each commit to <a href="https://www.myget.org/gallery/litjson">MyGet</a>, so you if needed can use pre-release versions, and we're now also deploying each release to <a href="https://www.nuget.org/packages/LitJson">NuGet</a>.</p>
+
+
+<hr />
+
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.10.0-released&t=LitJSON%20v0.10.0%20released" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/img/social_flat_rounded_rects_svg/Facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.10.0-released&text=LitJSON%20v0.10.0%20released:%20https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.10.0-released&via=litjsonnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/img/social_flat_rounded_rects_svg/Twitter.svg"></a></li>
+  <li><a href="https://plus.google.com/share?url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.10.0-released" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/assets/img/social_flat_rounded_rects_svg/Google+.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.10.0-released&title=LitJSON%20v0.10.0%20released" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.10.0-released&title=LitJSON%20v0.10.0%20released&summary=&source=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.10.0-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/img/social_flat_rounded_rects_svg/LinkedIn.svg"></a></li>
+  <li><a href="mailto:?subject=LitJSON%20v0.10.0%20released&body=:%20https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.10.0-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/img/social_flat_rounded_rects_svg/Email.svg"></a></li>
+</ul>
 
 	</section>
                 
