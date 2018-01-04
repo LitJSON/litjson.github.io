@@ -8,6 +8,10 @@ NoGutter: true
         <h1>What is LitjSON?</h1>
         <p>A .Net library to handle conversions from and to JSON (JavaScript Object Notation) strings.</p>
         <p>LitJSON is written in C#, and it’s intended to be small, fast and easy to use.</p>
+        <p>><i>To sumarize it's quick and lean, without external dependencies.<br/>
+          Just a few classes so easily embeddable in your own code or a very small assembly to ship with your code.<br/>
+          The code is highly portable, which in general makes it easy to adapt for new platforms.</i>
+        </p>
         <p>
             <a class="btn btn-primary btn-lg" href="/docs/quickstart" role="button">Quickstart &raquo;</a>
         </p>
@@ -20,7 +24,8 @@ NoGutter: true
         <div class="col-xs-12 col-sm-6">
             @foreach(IDocument doc in Documents[Docs.BlogPosts].Take(5))
             {
-                <h3><a href="@Context.GetLink(doc)">@doc.WithoutSettings.String(DocsKeys.Title)</a> - <i class="fa fa-calendar"></i> Published: @(doc.Get<DateTime>(DocsKeys.Published).ToLongDateString(Context))</h3>
+                <h3><a href="@Context.GetLink(doc)">@doc.WithoutSettings.String(DocsKeys.Title)</a> <br/>
+                <i class="fa fa-calendar"></i> Published: @(doc.Get<DateTime>(DocsKeys.Published).ToLongDateString(Context))</h3>
             }
         </div>
         <div class="col-sm-6 hidden-xs">
