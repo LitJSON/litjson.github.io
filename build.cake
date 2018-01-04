@@ -52,6 +52,7 @@ Task("CleanSource")
             Force = true
         });
     }
+    EnsureDirectoryExists(releaseDir);
 });
 
 Task("GetSource")
