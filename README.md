@@ -1,3 +1,3 @@
 # LitJSON Website
 
-[litjson.net](litjson.net)
+[https://litjson.net/](https://litjson.net/)
