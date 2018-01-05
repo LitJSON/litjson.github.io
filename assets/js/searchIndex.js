@@ -34,30 +34,6 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"ImporterFunc",
-        content:"ImporterFunc",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
-        title:"JsonWriter",
-        content:"JsonWriter",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:2,
-        title:"JsonException",
-        content:"JsonException",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:3,
         title:"JsonReader",
         content:"JsonReader",
         description:'',
@@ -65,9 +41,33 @@ var searchModule = function() {
     });
 
     a({
-        id:4,
+        id:1,
+        title:"IJsonWrapper",
+        content:"IJsonWrapper",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:2,
         title:"JsonMapper",
         content:"JsonMapper",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:3,
+        title:"JsonException",
+        content:"JsonException",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:4,
+        title:"ImporterFunc",
+        content:"ImporterFunc",
         description:'',
         tags:''
     });
@@ -90,30 +90,6 @@ var searchModule = function() {
 
     a({
         id:7,
-        title:"JsonToken",
-        content:"JsonToken",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:8,
-        title:"IJsonWrapper",
-        content:"IJsonWrapper",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:9,
-        title:"ExporterFunc",
-        content:"ExporterFunc",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:10,
         title:"WrapperFactory",
         content:"WrapperFactory",
         description:'',
@@ -121,22 +97,52 @@ var searchModule = function() {
     });
 
     a({
-        id:11,
+        id:8,
+        title:"JsonToken",
+        content:"JsonToken",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:9,
         title:"JsonData",
         content:"JsonData",
         description:'',
         tags:''
     });
 
+    a({
+        id:10,
+        title:"ExporterFunc",
+        content:"ExporterFunc",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:11,
+        title:"JsonWriter",
+        content:"JsonWriter",
+        description:'',
+        tags:''
+    });
+
     y({
-        url:'/api/LitJson/ImporterFunc_2',
-        title:"ImporterFunc<TJson, TValue>",
+        url:'/api/LitJson/JsonReader',
+        title:"JsonReader",
         description:""
     });
 
     y({
-        url:'/api/LitJson/JsonWriter',
-        title:"JsonWriter",
+        url:'/api/LitJson/IJsonWrapper',
+        title:"IJsonWrapper",
+        description:""
+    });
+
+    y({
+        url:'/api/LitJson/JsonMapper',
+        title:"JsonMapper",
         description:""
     });
 
@@ -147,14 +153,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/api/LitJson/JsonReader',
-        title:"JsonReader",
-        description:""
-    });
-
-    y({
-        url:'/api/LitJson/JsonMapper',
-        title:"JsonMapper",
+        url:'/api/LitJson/ImporterFunc_2',
+        title:"ImporterFunc<TJson, TValue>",
         description:""
     });
 
@@ -171,14 +171,20 @@ var searchModule = function() {
     });
 
     y({
+        url:'/api/LitJson/WrapperFactory',
+        title:"WrapperFactory",
+        description:""
+    });
+
+    y({
         url:'/api/LitJson/JsonToken',
         title:"JsonToken",
         description:""
     });
 
     y({
-        url:'/api/LitJson/IJsonWrapper',
-        title:"IJsonWrapper",
+        url:'/api/LitJson/JsonData',
+        title:"JsonData",
         description:""
     });
 
@@ -189,14 +195,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/api/LitJson/WrapperFactory',
-        title:"WrapperFactory",
-        description:""
-    });
-
-    y({
-        url:'/api/LitJson/JsonData',
-        title:"JsonData",
+        url:'/api/LitJson/JsonWriter',
+        title:"JsonWriter",
         description:""
     });
 
