@@ -34,16 +34,16 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"JsonData",
-        content:"JsonData",
+        title:"ImporterFunc",
+        content:"ImporterFunc",
         description:'',
         tags:''
     });
 
     a({
         id:1,
-        title:"JsonMockWrapper",
-        content:"JsonMockWrapper",
+        title:"JsonWriter",
+        content:"JsonWriter",
         description:'',
         tags:''
     });
@@ -58,22 +58,6 @@ var searchModule = function() {
 
     a({
         id:3,
-        title:"WrapperFactory",
-        content:"WrapperFactory",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:4,
-        title:"JsonToken",
-        content:"JsonToken",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
         title:"JsonReader",
         content:"JsonReader",
         description:'',
@@ -81,15 +65,7 @@ var searchModule = function() {
     });
 
     a({
-        id:6,
-        title:"ImporterFunc",
-        content:"ImporterFunc",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:7,
+        id:4,
         title:"JsonMapper",
         content:"JsonMapper",
         description:'',
@@ -97,9 +73,33 @@ var searchModule = function() {
     });
 
     a({
-        id:8,
+        id:5,
         title:"JsonType",
         content:"JsonType",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:6,
+        title:"JsonMockWrapper",
+        content:"JsonMockWrapper",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:7,
+        title:"JsonToken",
+        content:"JsonToken",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:8,
+        title:"IJsonWrapper",
+        content:"IJsonWrapper",
         description:'',
         tags:''
     });
@@ -114,29 +114,29 @@ var searchModule = function() {
 
     a({
         id:10,
-        title:"IJsonWrapper",
-        content:"IJsonWrapper",
+        title:"WrapperFactory",
+        content:"WrapperFactory",
         description:'',
         tags:''
     });
 
     a({
         id:11,
-        title:"JsonWriter",
-        content:"JsonWriter",
+        title:"JsonData",
+        content:"JsonData",
         description:'',
         tags:''
     });
 
     y({
-        url:'/api/LitJson/JsonData',
-        title:"JsonData",
+        url:'/api/LitJson/ImporterFunc_2',
+        title:"ImporterFunc<TJson, TValue>",
         description:""
     });
 
     y({
-        url:'/api/LitJson/JsonMockWrapper',
-        title:"JsonMockWrapper",
+        url:'/api/LitJson/JsonWriter',
+        title:"JsonWriter",
         description:""
     });
 
@@ -147,26 +147,8 @@ var searchModule = function() {
     });
 
     y({
-        url:'/api/LitJson/WrapperFactory',
-        title:"WrapperFactory",
-        description:""
-    });
-
-    y({
-        url:'/api/LitJson/JsonToken',
-        title:"JsonToken",
-        description:""
-    });
-
-    y({
         url:'/api/LitJson/JsonReader',
         title:"JsonReader",
-        description:""
-    });
-
-    y({
-        url:'/api/LitJson/ImporterFunc_2',
-        title:"ImporterFunc<TJson, TValue>",
         description:""
     });
 
@@ -183,8 +165,14 @@ var searchModule = function() {
     });
 
     y({
-        url:'/api/LitJson/ExporterFunc_1',
-        title:"ExporterFunc<T>",
+        url:'/api/LitJson/JsonMockWrapper',
+        title:"JsonMockWrapper",
+        description:""
+    });
+
+    y({
+        url:'/api/LitJson/JsonToken',
+        title:"JsonToken",
         description:""
     });
 
@@ -195,8 +183,20 @@ var searchModule = function() {
     });
 
     y({
-        url:'/api/LitJson/JsonWriter',
-        title:"JsonWriter",
+        url:'/api/LitJson/ExporterFunc_1',
+        title:"ExporterFunc<T>",
+        description:""
+    });
+
+    y({
+        url:'/api/LitJson/WrapperFactory',
+        title:"WrapperFactory",
+        description:""
+    });
+
+    y({
+        url:'/api/LitJson/JsonData',
+        title:"JsonData",
         description:""
     });
 
