@@ -5,8 +5,8 @@
 		<link>https://litjson.net/</link>
 		<description />
 		<copyright>2018</copyright>
-		<pubDate>Thu, 04 Jan 2018 23:49:51 GMT</pubDate>
-		<lastBuildDate>Thu, 04 Jan 2018 23:49:51 GMT</lastBuildDate>
+		<pubDate>Fri, 05 Jan 2018 07:37:16 GMT</pubDate>
+		<lastBuildDate>Fri, 05 Jan 2018 07:37:16 GMT</lastBuildDate>
 		<item>
 			<title>LitJSON v0.10.0 released</title>
 			<link>https://litjson.net/blog/2018/01/litjson-v0.10.0-released</link>
@@ -23,11 +23,11 @@
 &lt;li&gt;.NET Standard 1.5&lt;/li&gt;
 &lt;li&gt;.NET Framework 4.5&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Which makes it available to most of the .NET runtimes out there, please raise an issue/pullrequest if your missing any target.&lt;/p&gt;
-&lt;p&gt;The &lt;a href="https://litjson.net/api/LitJson/JsonWriter"&gt;JsonWriter&lt;/a&gt; now has &lt;a href="https://litjson.net/api/LitJson/JsonWriter/B6391FAB"&gt;LowerCaseProperties&lt;/a&gt; property which forces all properties to be outputted lowercase.&lt;/p&gt;
+&lt;p&gt;Which makes it available to most of the .NET runtimes out there, please raise an issue/pullrequest if you are missing any target.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://litjson.net/api/LitJson/JsonWriter"&gt;JsonWriter&lt;/a&gt; now has the &lt;a href="https://litjson.net/api/LitJson/JsonWriter/B6391FAB"&gt;LowerCaseProperties&lt;/a&gt; property which forces all properties to be outputted in lowercase.&lt;/p&gt;
 &lt;p&gt;The code base is now compatible and compilable under SQLCLR, which makes it an option for handling JSON with your CLR procedures and functions in SQL Server 2012 and up.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bugfixes&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Long/Int64 is now handled more robust and can be upcasted from int.&lt;/p&gt;
+&lt;p&gt;Long/Int64 are now handled more robustly and can be upcast from an int.&lt;/p&gt;
 &lt;p&gt;Numbers are now handled in a culture invariant way, which means things will work the same regardless of culture on the clients maachine.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This release's contributors&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -38,10 +38,10 @@
 &lt;p&gt;A big thanks to all LitJSON contributors and users, it wouldn't have been possible without you!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Housekeeping&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;There's been plenty of yak shaving before this release, to improve quality and simplify contribution to the project.&lt;/p&gt;
-&lt;p&gt;The project is now compiling multitargeted using .NET Core CLI, unit tests have migrated to work with newer versions of NUnit and the .NET CLI. This aslo means there's now MSBuild solution and project files, so you can open and compile the project in Visual Studio, VisualStudio Mac, VSCode and Jetbrains Rider.&lt;/p&gt;
-&lt;p&gt;A &lt;a href="https://cakebuild.net"&gt;Cake&lt;/a&gt; build script has been added to orchestrate the build, test, packageing and deployment of the project. Ivoking the Cake build script is easiest done via the bootstrappers &lt;code&gt;build.ps1&lt;/code&gt; (Windows) or &lt;code&gt;build.sh&lt;/code&gt; (MacOS/Linux), which will fetch the Cake version and the .NET SDK needed to build the project.&lt;/p&gt;
+&lt;p&gt;The project is now compiling multitargeted using .NET Core CLI, unit tests have migrated to work with newer versions of NUnit and the .NET CLI. This aslo means there's now an MSBuild solution and project files, so you can open and compile the project in Visual Studio, Visual Studio for Mac, VSCode and Jetbrains Rider.&lt;/p&gt;
+&lt;p&gt;A &lt;a href="https://cakebuild.net"&gt;Cake&lt;/a&gt; build script has been added to orchestrate the build, test, packaging and deployment of the project. Invoking the Cake build script is most easily done via the bootstrappers, &lt;code&gt;build.ps1&lt;/code&gt; (Windows) or &lt;code&gt;build.sh&lt;/code&gt; (MacOS/Linux), which will fetch the specfied Cake version and the .NET SDK needed to build the project.&lt;/p&gt;
 &lt;p&gt;LitJSON now has CI configured on &lt;a href="https://ci.appveyor.com/project/litjson/litjson/branch/develop"&gt;AppVeyor&lt;/a&gt; and &lt;a href="https://travis-ci.org/LitJSON/litjson"&gt;TravisCI&lt;/a&gt;, which means each commit and pull requests now continously builds on Linux, MacOS and Windows.&lt;/p&gt;
-&lt;p&gt;We now automatically deploy each commit to &lt;a href="https://www.myget.org/gallery/litjson"&gt;MyGet&lt;/a&gt;, so you if needed can use pre-release versions, and we're now also deploying each release to &lt;a href="https://www.nuget.org/packages/LitJson"&gt;NuGet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We now automatically deploy each commit to &lt;a href="https://www.myget.org/gallery/litjson"&gt;MyGet&lt;/a&gt;, so you if needed you can use pre-release versions, and we're now also deploying each release to &lt;a href="https://www.nuget.org/packages/LitJson"&gt;NuGet&lt;/a&gt;.&lt;/p&gt;
 </content:encoded>
 		</item>
 		<item>

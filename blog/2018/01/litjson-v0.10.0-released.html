@@ -135,11 +135,11 @@
 <li>.NET Standard 1.5</li>
 <li>.NET Framework 4.5</li>
 </ul>
-<p>Which makes it available to most of the .NET runtimes out there, please raise an issue/pullrequest if your missing any target.</p>
-<p>The <a href="https://litjson.net/api/LitJson/JsonWriter">JsonWriter</a> now has <a href="https://litjson.net/api/LitJson/JsonWriter/B6391FAB">LowerCaseProperties</a> property which forces all properties to be outputted lowercase.</p>
+<p>Which makes it available to most of the .NET runtimes out there, please raise an issue/pullrequest if you are missing any target.</p>
+<p>The <a href="https://litjson.net/api/LitJson/JsonWriter">JsonWriter</a> now has the <a href="https://litjson.net/api/LitJson/JsonWriter/B6391FAB">LowerCaseProperties</a> property which forces all properties to be outputted in lowercase.</p>
 <p>The code base is now compatible and compilable under SQLCLR, which makes it an option for handling JSON with your CLR procedures and functions in SQL Server 2012 and up.</p>
 <p><strong>Bugfixes</strong></p>
-<p>Long/Int64 is now handled more robust and can be upcasted from int.</p>
+<p>Long/Int64 are now handled more robustly and can be upcast from an int.</p>
 <p>Numbers are now handled in a culture invariant way, which means things will work the same regardless of culture on the clients maachine.</p>
 <p><strong>This release's contributors</strong></p>
 <ul>
@@ -150,10 +150,10 @@
 <p>A big thanks to all LitJSON contributors and users, it wouldn't have been possible without you!</p>
 <p><strong>Housekeeping</strong></p>
 <p>There's been plenty of yak shaving before this release, to improve quality and simplify contribution to the project.</p>
-<p>The project is now compiling multitargeted using .NET Core CLI, unit tests have migrated to work with newer versions of NUnit and the .NET CLI. This aslo means there's now MSBuild solution and project files, so you can open and compile the project in Visual Studio, VisualStudio Mac, VSCode and Jetbrains Rider.</p>
-<p>A <a href="https://cakebuild.net">Cake</a> build script has been added to orchestrate the build, test, packageing and deployment of the project. Ivoking the Cake build script is easiest done via the bootstrappers <code>build.ps1</code> (Windows) or <code>build.sh</code> (MacOS/Linux), which will fetch the Cake version and the .NET SDK needed to build the project.</p>
+<p>The project is now compiling multitargeted using .NET Core CLI, unit tests have migrated to work with newer versions of NUnit and the .NET CLI. This aslo means there's now an MSBuild solution and project files, so you can open and compile the project in Visual Studio, Visual Studio for Mac, VSCode and Jetbrains Rider.</p>
+<p>A <a href="https://cakebuild.net">Cake</a> build script has been added to orchestrate the build, test, packaging and deployment of the project. Invoking the Cake build script is most easily done via the bootstrappers, <code>build.ps1</code> (Windows) or <code>build.sh</code> (MacOS/Linux), which will fetch the specfied Cake version and the .NET SDK needed to build the project.</p>
 <p>LitJSON now has CI configured on <a href="https://ci.appveyor.com/project/litjson/litjson/branch/develop">AppVeyor</a> and <a href="https://travis-ci.org/LitJSON/litjson">TravisCI</a>, which means each commit and pull requests now continously builds on Linux, MacOS and Windows.</p>
-<p>We now automatically deploy each commit to <a href="https://www.myget.org/gallery/litjson">MyGet</a>, so you if needed can use pre-release versions, and we're now also deploying each release to <a href="https://www.nuget.org/packages/LitJson">NuGet</a>.</p>
+<p>We now automatically deploy each commit to <a href="https://www.myget.org/gallery/litjson">MyGet</a>, so you if needed you can use pre-release versions, and we're now also deploying each release to <a href="https://www.nuget.org/packages/LitJson">NuGet</a>.</p>
 
 
 <hr />
