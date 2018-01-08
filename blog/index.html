@@ -120,6 +120,35 @@
 	<section class="content">
 		
 
+        <h2><a href="/blog/2018/01/litjson-v0.11.0-released">LitJSON v0.11.0 released</a></h2>
+<dl class="dl-horizontal">
+    <dt><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Monday, January 8, 2018</dd>
+        <dt><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
+            <dt><i class="fa fa-user"></i> Author</dt>
+        <dd><a href="/blog/author/devlead">devlead</a></dd>
+</dl>            <div>
+                <p>Version v0.11.0 of LitJSON has been released.</p>
+<p>This is a minor release to address NuGet compatibility with Unity, which currently supports max .NET 3.5.</p>
+<p>We've also added SourceLink for portable PDBs, and source code to symbols NuGet package, to simplify debugging - by linking symbols to GitHub commit.</p>
+<p><strong>Changes in  this release</strong></p>
+<ul>
+<li>Added .NET 3.5 target</li>
+<li>Added .NET 4.0 target</li>
+<li>Added source link</li>
+<li>Added source to symbols package</li>
+<li>Added NuGet package description</li>
+<li>Added Use CLRF based on environment</li>
+<li>Added CLRF fix for AppVeyor</li>
+</ul>
+<p><strong>This release's contributors</strong></p>
+<ul>
+<li><a href="https://github.com/devlead">devlead</a></li>
+</ul>
+
+            </div>
+        <hr />
         <h2><a href="/blog/2018/01/litjson-v0.10.0-released">LitJSON v0.10.0 released</a></h2>
 <dl class="dl-horizontal">
     <dt><i class="fa fa-calendar"></i> Published</dt>
@@ -130,34 +159,7 @@
         <dd><a href="/blog/author/devlead">devlead</a></dd>
 </dl>            <div>
                 <p>Version v0.10.0 of LitJSON has been released.</p>
-<p>This is the first release under the new LitJSON organization, it includes a few new major improvements and a couple of bug fixes.</p>
-<p><strong>Features</strong></p>
-<p>LitJSON has now been ported to .NET Core, which means it's now targets</p>
-<ul>
-<li>.NET Standard 2.0</li>
-<li>.NET Standard 1.5</li>
-<li>.NET Framework 4.5</li>
-</ul>
-<p>Which makes it available to most of the .NET runtimes out there, please raise an issue/pullrequest if you are missing any target.</p>
-<p>The <a href="https://litjson.net/api/LitJson/JsonWriter">JsonWriter</a> now has the <a href="https://litjson.net/api/LitJson/JsonWriter/B6391FAB">LowerCaseProperties</a> property which forces all properties to be outputted in lowercase.</p>
-<p>The code base is now compatible and compilable under SQLCLR, which makes it an option for handling JSON with your CLR procedures and functions in SQL Server 2012 and up.</p>
-<p><strong>Bugfixes</strong></p>
-<p>Long/Int64 are now handled more robustly and can be upcast from an int.</p>
-<p>Numbers are now handled in a culture invariant way, which means things will work the same regardless of culture on the clients maachine.</p>
-<p><strong>This release's contributors</strong></p>
-<ul>
-<li><a href="https://github.com/devlead">devlead</a></li>
-<li><a href="https://github.com/ikasoumen4">ikasoumen4</a></li>
-<li><a href="https://github.com/zhenlinyang">zhenlinyang</a></li>
-</ul>
-<p>A big thanks to all LitJSON contributors and users, it wouldn't have been possible without you!</p>
-<p><strong>Housekeeping</strong></p>
-<p>There's been plenty of yak shaving before this release, to improve quality and simplify contribution to the project.</p>
-<p>The project is now compiling multitargeted using .NET Core CLI, unit tests have migrated to work with newer versions of NUnit and the .NET CLI. This aslo means there's now an MSBuild solution and project files, so you can open and compile the project in Visual Studio, Visual Studio for Mac, VSCode and Jetbrains Rider.</p>
-<p>A <a href="https://cakebuild.net">Cake</a> build script has been added to orchestrate the build, test, packaging and deployment of the project. Invoking the Cake build script is most easily done via the bootstrappers, <code>build.ps1</code> (Windows) or <code>build.sh</code> (MacOS/Linux), which will fetch the specfied Cake version and the .NET SDK needed to build the project.</p>
-<p>LitJSON now has CI configured on <a href="https://ci.appveyor.com/project/litjson/litjson/branch/develop">AppVeyor</a> and <a href="https://travis-ci.org/LitJSON/litjson">TravisCI</a>, which means each commit and pull requests now continously builds on Linux, MacOS and Windows.</p>
-<p>We now automatically deploy each commit to <a href="https://www.myget.org/gallery/litjson">MyGet</a>, so you if needed you can use pre-release versions, and we're now also deploying each release to <a href="https://www.nuget.org/packages/LitJson">NuGet</a>.</p>
-
+                <a href="/blog/2018/01/litjson-v0.10.0-released">Read more...</a>
             </div>
         <hr />
         <h2><a href="/blog/2017/12/new-org-and-site">New organization and web site</a></h2>
@@ -197,19 +199,6 @@
 </dl>            <div>
                 <p>Version v0.7.0 of LitJSON has been released.</p>
                 <a href="/blog/2013/04/litjson-v0.7.0-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/blog/2007/10/litjson-v0.5.0-released">LitJSON v0.5.0 released</a></h2>
-<dl class="dl-horizontal">
-    <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Thursday, October 4, 2007</dd>
-        <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
-            <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/blog/author/lbv">lbv</a></dd>
-</dl>            <div>
-                <p>Version v0.5.0 of LitJSON has been released.</p>
-                <a href="/blog/2007/10/litjson-v0.5.0-released">Read more...</a>
             </div>
         <hr />
     <nav>

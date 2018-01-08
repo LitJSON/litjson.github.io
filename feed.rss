@@ -5,8 +5,34 @@
 		<link>https://litjson.net/</link>
 		<description />
 		<copyright>2018</copyright>
-		<pubDate>Mon, 08 Jan 2018 08:15:59 GMT</pubDate>
-		<lastBuildDate>Mon, 08 Jan 2018 08:15:59 GMT</lastBuildDate>
+		<pubDate>Mon, 08 Jan 2018 09:02:04 GMT</pubDate>
+		<lastBuildDate>Mon, 08 Jan 2018 09:02:04 GMT</lastBuildDate>
+		<item>
+			<title>LitJSON v0.11.0 released</title>
+			<link>https://litjson.net/blog/2018/01/litjson-v0.11.0-released</link>
+			<description>&lt;p&gt;Version v0.11.0 of LitJSON has been released.&lt;/p&gt;</description>
+			<author>devlead</author>
+			<guid>https://litjson.net/blog/2018/01/litjson-v0.11.0-released</guid>
+			<pubDate>Mon, 08 Jan 2018 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version v0.11.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;This is a minor release to address NuGet compatibility with Unity, which currently supports max .NET 3.5.&lt;/p&gt;
+&lt;p&gt;We've also added SourceLink for portable PDBs, and source code to symbols NuGet package, to simplify debugging - by linking symbols to GitHub commit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Changes in  this release&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added .NET 3.5 target&lt;/li&gt;
+&lt;li&gt;Added .NET 4.0 target&lt;/li&gt;
+&lt;li&gt;Added source link&lt;/li&gt;
+&lt;li&gt;Added source to symbols package&lt;/li&gt;
+&lt;li&gt;Added NuGet package description&lt;/li&gt;
+&lt;li&gt;Added Use CLRF based on environment&lt;/li&gt;
+&lt;li&gt;Added CLRF fix for AppVeyor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;This release's contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>LitJSON v0.10.0 released</title>
 			<link>https://litjson.net/blog/2018/01/litjson-v0.10.0-released</link>
