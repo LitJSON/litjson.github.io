@@ -4,7 +4,7 @@
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
 	<rights>2018</rights>
-	<updated>2018-01-05T10:12:59Z</updated>
+	<updated>2018-01-08T08:15:59Z</updated>
 	<entry>
 		<author>
 			<name>devlead</name>
@@ -60,5 +60,221 @@
 &lt;p&gt;And at the same time we'll be adding cross platform continuous integration and support for continuous deployment of releases to NuGet.org and each commit to MyGet.org.&lt;/p&gt;
 </content>
 		<summary>&lt;p&gt;After the project's been a bit dormant for a while we're now happy to announce that &lt;a href="https://github.com/LitJSON/litjson"&gt;LitJSON&lt;/a&gt; has now moved to it's own &lt;a href="https://github.com/litjson"&gt;LitJSON&lt;/a&gt; GitHub organization.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<author>
+			<name>lbv</name>
+		</author>
+		<link href="https://litjson.net/blog/2014/09/litjson-v0.9.0-released" />
+		<id>https://litjson.net/blog/2014/09/litjson-v0.9.0-released</id>
+		<title>LitJSON v0.9.0 released</title>
+		<updated>2014-09-08T00:00:00Z</updated>
+		<content>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Version v0.9.0 of LitJSON has been released.&lt;/p&gt;
+&lt;h2 id="additions"&gt;Additions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;&lt;a href="/api/LitJson/JsonData/A64A1513"&gt;JsonData.Keys&lt;/a&gt;&lt;/code&gt; property, with type &lt;code&gt;ICollection&amp;lt;string&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="bug-fixes"&gt;Bug fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Handle nullable types (Issue #3)&lt;/li&gt;
+&lt;li&gt;Parse UInt64 numbers correctly&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-changes"&gt;Other changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Allow specifying a custom PKG_CONFIG in build/make.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="contributors-for-this-release"&gt;Contributors for this release&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/michaelbartnett"&gt;Michael Bartnett&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/MickeyKim"&gt;MickeyKim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;&lt;/html&gt;</content>
+		<summary>&lt;p&gt;Version v0.9.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<author>
+			<name>lbv</name>
+		</author>
+		<link href="https://litjson.net/blog/2013/04/litjson-v0.7.0-released" />
+		<id>https://litjson.net/blog/2013/04/litjson-v0.7.0-released</id>
+		<title>LitJSON v0.7.0 released</title>
+		<updated>2013-04-26T00:00:00Z</updated>
+		<content>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Version v0.7.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;General changes and improvements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Simplified the building mechanism. Dropped the entire autotools
+infrastructure, and instead added a single Makefile to compile the project
+and run the tests with &lt;em&gt;GNU make&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Added &lt;code&gt;SkipNonMembers&lt;/code&gt; property to &lt;code&gt;&lt;a href="/api/LitJson/JsonReader"&gt;JsonReader&lt;/a&gt;&lt;/code&gt;. When active, it allows to
+parse JSON data using &lt;code&gt;JsonMapper.ToObject&amp;lt;T&amp;gt;&lt;/code&gt; and ignore any properties
+not available in the type &lt;code&gt;T&lt;/code&gt;. Its default value is &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Started moving the documentation into Markdown format.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Added a new section to the QuickStart Guide, regarding customisation of
+the library's behaviour.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bug fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Convert &lt;code&gt;null&lt;/code&gt; properties properly in &lt;code&gt;JsonData.ToJson&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read nested arrays in &lt;code&gt;JsonMapper.ToObject&lt;/code&gt; and &lt;code&gt;JsonMapper.ToObject&amp;lt;T&amp;gt;&lt;/code&gt;
+correctly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Contributors for this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/whoo24"&gt;whoo24&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Christopher Dummy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;&lt;/html&gt;</content>
+		<summary>&lt;p&gt;Version v0.7.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<author>
+			<name>lbv</name>
+		</author>
+		<link href="https://litjson.net/blog/2007/10/litjson-v0.5.0-released" />
+		<id>https://litjson.net/blog/2007/10/litjson-v0.5.0-released</id>
+		<title>LitJSON v0.5.0 released</title>
+		<updated>2007-10-04T00:00:00Z</updated>
+		<content>&lt;p&gt;Version v0.5.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;New features and improvements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The JsonRader class now has two properties to control the reading of data
+from an input stream: EndOfInput and EndOfJson. The latter becomes
+true whenever a complete piece of JSON text has been read, while the
+former is a flag that becomes true when the stream itself reaches the end.
+This way, reading multiple JSON texts from the same input stream is
+straightforward.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Added new base importers in JsonMapper for reading numeric values
+correctly into float and double members.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Now Enum's can be imported/exported as numeric values.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;JsonData implements the IEquatable&lt;T&gt; interface now.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;API changes:&lt;/p&gt;
+&lt;p&gt;The following types are new:
+enum JsonType&lt;/p&gt;
+&lt;p&gt;The following methods are new:
+IJsonWrapper.GetJsonType()
+IJsonWrapper.SetJsonType()&lt;/p&gt;
+&lt;p&gt;The following properties are new:
+JsonReader.EndOfInput&lt;/p&gt;
+&lt;p&gt;Bug fixes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Correctly import/export properties that are read-only or write-only.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Correctly convert null values when adding them as array elements or
+properties to a JsonData instance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Fixed conversion of empty JSON objects and arrays.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks to all the contributors that reported problems and suggested fixes
+for this release:
+Colin Alworth
+Ralf Callenberg
+andi&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Version v0.5.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<author>
+			<name>lbv</name>
+		</author>
+		<link href="https://litjson.net/blog/2007/08/litjson-v0.3.0-released" />
+		<id>https://litjson.net/blog/2007/08/litjson-v0.3.0-released</id>
+		<title>LitJSON v0.3.0 released</title>
+		<updated>2007-08-15T00:00:00Z</updated>
+		<content>&lt;p&gt;Version v0.3.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;New features and improvements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Exporters and importers.
+Custom conversions using the JsonMapper class can be made through
+importers and exporters. These are delegates that tell the library how to
+perform conversions between non-basic types (i.e. not string, int, long,
+double or boolean) and JSON. There are base and custom
+exporters/importers. The base exporters and importers are built-in
+delegates that currently handle simple conversions between JSON and the
+following value types:&lt;/p&gt;
+&lt;p&gt;byte
+char
+DateTime
+decimal
+sbyte
+short
+ushort
+uint
+ulong&lt;/p&gt;
+&lt;p&gt;Custom exporters and importers can be defined through
+JsonMapper.RegisterExporter and JsonMapper.RegisterImporter, and they
+override the built-in conversions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Improved performance of JsonMapper.ToJson()
+A static JsonWriter is re-used to reduce the activity in the heap,
+improving performance for multiple conversions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Allowing extended grammar
+The lexer can now accept single-quoted strings, and comments in the
+following forms:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;    // Single-line comment
+
+    /*
+     * Multi-line comment
+     */
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This way, certain forms of input coming from JavaScript that don't
+necessarily conform to the strict JSON grammar are allowed and succesfully
+parsed.&lt;/p&gt;
+&lt;p&gt;A JsonReader can be configured to accept only the strict grammar or the
+extended one. These extensions are allowed by default.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;API cleanups and additions.
+The following members are new:&lt;/p&gt;
+&lt;p&gt;JsonData.Count
+JsonMapper.RegisterExporter()
+JsonMapper.RegisterImporter()
+JsonMapper.UnregisterExporters()
+JsonMapper.UnregisterImporters()
+JsonReader.AllowComments
+JsonReader.AllowSingleQuotedStrings
+JsonWriter.Reset()&lt;/p&gt;
+&lt;p&gt;The following overloads have been added:&lt;/p&gt;
+&lt;p&gt;JsonMapper.ToJson(object obj, JsonWriter writer)
+JsonMapper.ToObject(JsonReader reader)&lt;/p&gt;
+&lt;p&gt;The following members have been renamed:&lt;/p&gt;
+&lt;p&gt;JsonReader.HasReachedEnd is now JsonReader.EndOfJson&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bugs fixed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JsonMapper.ToJson() avoids entering an infinite recursion by defining a
+max nesting depth.&lt;/li&gt;
+&lt;li&gt;The JsonData int indexer now behaves correctly both when it acts as an
+array and as an object.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Version v0.3.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<author>
+			<name>lbv</name>
+		</author>
+		<link href="https://litjson.net/blog/2007/08/first-release" />
+		<id>https://litjson.net/blog/2007/08/first-release</id>
+		<title>LitJSON v0.1.0 released</title>
+		<updated>2007-08-09T00:00:00Z</updated>
+		<content>&lt;p&gt;Version v0.1.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;The first release of LitJSON, a new xplat .NET JSON serializer has been born.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Version v0.1.0 of LitJSON has been released.&lt;/p&gt;</summary>
 	</entry>
 </feed>

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>LitJSON - December, 2017</title>
+        <title>LitJSON - LitJSON v0.5.0 released</title>
         <link href="/assets/css/mermaid.css" rel="stylesheet">
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -79,6 +79,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
+        <div><p><a href="https://github.com/LitJSON/litjson.github.io/blob/develop/input/blog/2007-10-04-litjson-v0.5.0-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -94,7 +95,7 @@
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
         <li><a href="/blog/archive/2018/01">January, 2018</a></li>
-        <li class="selected"><a href="/blog/archive/2017/12">December, 2017</a></li>
+        <li><a href="/blog/archive/2017/12">December, 2017</a></li>
         <li><a href="/blog/archive/2014/09">September, 2014</a></li>
         <li><a href="/blog/archive/2013/04">April, 2013</a></li>
         <li><a href="/blog/archive/2007/10">October, 2007</a></li>
@@ -115,33 +116,74 @@
 
 
 	<section class="content-header">
-		<h1>December, 2017</h1>
+		<h1>LitJSON v0.5.0 released</h1>
 	</section>
 	<section class="content">
 		
 
-        <h2><a href="/blog/2017/12/new-org-and-site">New organization and web site</a></h2>
+
 <dl class="dl-horizontal">
     <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Thursday, December 28, 2017</dd>
+    <dd>Thursday, October 4, 2007</dd>
         <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/blog/Announcements">Announcements</a></dd>
+        <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
             <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/blog/author/devlead">devlead</a></dd>
-</dl>            <div>
-                <p>After the project's been a bit dormant for a while we're now happy to announce that <a href="https://github.com/LitJSON/litjson">LitJSON</a> has now moved to it's own <a href="https://github.com/litjson">LitJSON</a> GitHub organization.</p>
-                <a href="/blog/2017/12/new-org-and-site">Read more...</a>
-            </div>
-        <hr />
-    <nav>
-        <ul class="pager">
-            <li class="previous">                
-            </li>
-            <li class="next">
-            </li>
-        </ul>
-    </nav>
+        <dd><a href="/blog/author/lbv">lbv</a></dd>
+</dl>
 
+<p>Version v0.5.0 of LitJSON has been released.</p>
+<p>New features and improvements:</p>
+<ul>
+<li><p>The JsonRader class now has two properties to control the reading of data
+from an input stream: EndOfInput and EndOfJson. The latter becomes
+true whenever a complete piece of JSON text has been read, while the
+former is a flag that becomes true when the stream itself reaches the end.
+This way, reading multiple JSON texts from the same input stream is
+straightforward.</p>
+</li>
+<li><p>Added new base importers in JsonMapper for reading numeric values
+correctly into float and double members.</p>
+</li>
+<li><p>Now Enum's can be imported/exported as numeric values.</p>
+</li>
+<li><p>JsonData implements the IEquatable<T> interface now.</p>
+</li>
+</ul>
+<p>API changes:</p>
+<p>The following types are new:
+enum JsonType</p>
+<p>The following methods are new:
+IJsonWrapper.GetJsonType()
+IJsonWrapper.SetJsonType()</p>
+<p>The following properties are new:
+JsonReader.EndOfInput</p>
+<p>Bug fixes:</p>
+<ul>
+<li><p>Correctly import/export properties that are read-only or write-only.</p>
+</li>
+<li><p>Correctly convert null values when adding them as array elements or
+properties to a JsonData instance.</p>
+</li>
+<li><p>Fixed conversion of empty JSON objects and arrays.</p>
+</li>
+</ul>
+<p>Thanks to all the contributors that reported problems and suggested fixes
+for this release:
+Colin Alworth
+Ralf Callenberg
+andi</p>
+
+
+<hr />
+
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2flitjson.net%2F%2Fblog%2F2007%2F10%2Flitjson-v0.5.0-released&t=LitJSON%20v0.5.0%20released" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/img/social_flat_rounded_rects_svg/Facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2flitjson.net%2F%2Fblog%2F2007%2F10%2Flitjson-v0.5.0-released&text=LitJSON%20v0.5.0%20released:%20https%3A%2F%2flitjson.net%2F%2Fblog%2F2007%2F10%2Flitjson-v0.5.0-released&via=litjsonnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/img/social_flat_rounded_rects_svg/Twitter.svg"></a></li>
+  <li><a href="https://plus.google.com/share?url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2007%2F10%2Flitjson-v0.5.0-released" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/assets/img/social_flat_rounded_rects_svg/Google+.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2007%2F10%2Flitjson-v0.5.0-released&title=LitJSON%20v0.5.0%20released" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2007%2F10%2Flitjson-v0.5.0-released&title=LitJSON%20v0.5.0%20released&summary=&source=https%3A%2F%2flitjson.net%2F%2Fblog%2F2007%2F10%2Flitjson-v0.5.0-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/img/social_flat_rounded_rects_svg/LinkedIn.svg"></a></li>
+  <li><a href="mailto:?subject=LitJSON%20v0.5.0%20released&body=:%20https%3A%2F%2flitjson.net%2F%2Fblog%2F2007%2F10%2Flitjson-v0.5.0-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/img/social_flat_rounded_rects_svg/Email.svg"></a></li>
+</ul>
 
 	</section>
                 
