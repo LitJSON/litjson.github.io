@@ -5,8 +5,41 @@
 		<link>https://litjson.net/</link>
 		<description />
 		<copyright>2018</copyright>
-		<pubDate>Mon, 08 Jan 2018 15:23:20 GMT</pubDate>
-		<lastBuildDate>Mon, 08 Jan 2018 15:23:20 GMT</lastBuildDate>
+		<pubDate>Wed, 24 Jan 2018 10:59:42 GMT</pubDate>
+		<lastBuildDate>Wed, 24 Jan 2018 10:59:42 GMT</lastBuildDate>
+		<item>
+			<title>LitJSON v0.12.0 released</title>
+			<link>https://litjson.net/blog/2018/01/litjson-v0.12.0-released</link>
+			<description>&lt;p&gt;Version v0.12.0 of LitJSON has been released.&lt;/p&gt;</description>
+			<author>devlead</author>
+			<guid>https://litjson.net/blog/2018/01/litjson-v0.12.0-released</guid>
+			<pubDate>Wed, 24 Jan 2018 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version v0.12.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;This is a minor release of LitJSON, which based on community feedback and contribution, adds back support for .NET Framework version 2.0.&lt;/p&gt;
+&lt;p&gt;This means we now with the pre-built binaries available on NuGet support:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Standard 2.0&lt;/li&gt;
+&lt;li&gt;.NET Standard 1.5&lt;/li&gt;
+&lt;li&gt;.NET Framework 4.5 and above&lt;/li&gt;
+&lt;li&gt;.NET Framework 4.0&lt;/li&gt;
+&lt;li&gt;.NET Framework 3.5 (including SQLCLR)&lt;/li&gt;
+&lt;li&gt;.NET Framework 2.0&lt;/li&gt;
+&lt;li&gt;Mono 4.4.2 and above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Changes in  this release&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added  .NET 2.0 target&lt;/li&gt;
+&lt;li&gt;Updated build to Cake 0.25.0&lt;/li&gt;
+&lt;li&gt;Updated to .NET Core SDK 2.1.4&lt;/li&gt;
+&lt;li&gt;Updated PowerShell boostrapper to support PowerShell Core and non Windows Platforms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;This release's contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/immitev"&gt;immitev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>LitJSON v0.11.0 released</title>
 			<link>https://litjson.net/blog/2018/01/litjson-v0.11.0-released</link>

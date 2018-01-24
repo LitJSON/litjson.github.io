@@ -4,7 +4,42 @@
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
 	<rights>2018</rights>
-	<updated>2018-01-08T15:23:20Z</updated>
+	<updated>2018-01-24T10:59:42Z</updated>
+	<entry>
+		<author>
+			<name>devlead</name>
+		</author>
+		<link href="https://litjson.net/blog/2018/01/litjson-v0.12.0-released" />
+		<id>https://litjson.net/blog/2018/01/litjson-v0.12.0-released</id>
+		<title>LitJSON v0.12.0 released</title>
+		<updated>2018-01-24T00:00:00Z</updated>
+		<content>&lt;p&gt;Version v0.12.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;This is a minor release of LitJSON, which based on community feedback and contribution, adds back support for .NET Framework version 2.0.&lt;/p&gt;
+&lt;p&gt;This means we now with the pre-built binaries available on NuGet support:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET Standard 2.0&lt;/li&gt;
+&lt;li&gt;.NET Standard 1.5&lt;/li&gt;
+&lt;li&gt;.NET Framework 4.5 and above&lt;/li&gt;
+&lt;li&gt;.NET Framework 4.0&lt;/li&gt;
+&lt;li&gt;.NET Framework 3.5 (including SQLCLR)&lt;/li&gt;
+&lt;li&gt;.NET Framework 2.0&lt;/li&gt;
+&lt;li&gt;Mono 4.4.2 and above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Changes in  this release&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added  .NET 2.0 target&lt;/li&gt;
+&lt;li&gt;Updated build to Cake 0.25.0&lt;/li&gt;
+&lt;li&gt;Updated to .NET Core SDK 2.1.4&lt;/li&gt;
+&lt;li&gt;Updated PowerShell boostrapper to support PowerShell Core and non Windows Platforms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;This release's contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/immitev"&gt;immitev&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Version v0.12.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>devlead</name>

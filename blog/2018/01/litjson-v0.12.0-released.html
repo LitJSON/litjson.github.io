@@ -1,20 +1,22 @@
-﻿<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html>
+<html>
+    <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="description">
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>LitJSON - API - JsonMapper.ToJson(object, JsonWriter) Method</title>
+        <title>LitJSON - LitJSON v0.12.0 released</title>
         <link href="/assets/css/mermaid.css" rel="stylesheet">
         <link href="/assets/css/highlight.css" rel="stylesheet">
-        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
-        <link href="/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/assets/css/theme/theme.css" rel="stylesheet" />
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/assets/css/override.css" rel="stylesheet">
+        <link href="/assets/css/override.css" rel="stylesheet" />
         <script src="/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>        
         <script src="/assets/js/app.min.js"></script>         
@@ -60,9 +62,9 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li><a href="/blog">Blog</a></li>
+                                    <li class="active"><a href="/blog">Blog</a></li>
         <li><a href="/docs">Documentation</a></li>
-        <li class="active"><a href="/api">API</a></li>
+        <li><a href="/api">API</a></li>
         <li><a href="https://github.com/LitJSON/litjson"><i class="fa fa-github"></i> Source</a></li>
  
                         </ul>       
@@ -77,89 +79,32 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Parameters">Parameters</a></p>
-<p><a href="#ReturnValue">Return Value</a></p>
-<hr class="infobar-hidden">
-</div>
+        <div><p><a href="https://github.com/LitJSON/litjson.github.io/blob/develop/input/blog/2018-01-24-litjson-v0.12.0-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+    <div id="infobar-headings"></div>
 
                 </section>
                 <section class="sidebar">    
                                      
-                    	
-	    <script src="/assets/js/lunr.min.js"></script>
-    <script src="/assets/js/searchIndex.js"></script>
-    <div class="sidebar-form">
-        <div class="input-group">
-            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
-            <span class="input-group-btn">
-                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
-            </span>
-        </div>
-    </div>
-    <div id="search-results">
-    </div>
-    <script>
-        function runSearch(query){
-            $("#search-results").empty();			
-            if( query.length < 2 ){
-                return;
-            }			
-            var results = searchModule.search("*" + query + "*");
-            var listHtml = "<ul class='sidebar-menu'>";	
-            listHtml += "<li class='header'>Type Results</li>";	
-            if(results.length == 0 ){
-                listHtml += "<li>No results found</li>";
-            } else {					
-                for(var i = 0; i < results.length; ++i){
-                    var res = results[i];
-                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
-                }				
-            }
-            listHtml += "</ul>";				
-            $("#search-results").append(listHtml);
-        }
-
-        $(document).ready(function(){
-            $("#search").on('input propertychange paste', function() {
-                runSearch($("#search").val());
-            });
-        });
-
-        function htmlEscape(html) {
-            return document.createElement('div')
-                .appendChild(document.createTextNode(html))
-                .parentNode
-                .innerHTML;
-        }
-    </script>
-	
-    <hr>
+                    
 
                     <ul class="sidebar-menu">
                         
-			<li class="header">Namespace</li>
-		<li><a href="/api/LitJson">LitJson</a></li>
-		<li class="header">Type</li>
-		<li><a href="/api/LitJson/JsonMapper">JsonMapper</a></li>
-		<li role="separator" class="divider"></li>
-			<li class="header">Method Members</li>
-				<li><a href="/api/LitJson/JsonMapper/598C9820">RegisterExporter<wbr>&lt;T&gt;<wbr><wbr>(ExporterFunc<wbr>&lt;T&gt;<wbr>)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/16B88B07">RegisterImporter<wbr>&lt;TJson, <wbr>TValue&gt;<wbr><wbr>(ImporterFunc<wbr>&lt;TJson, <wbr>TValue&gt;<wbr>)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/15F9F01A">ToJson<wbr>(object)<wbr></a></li>
-				<li class="selected"><a href="/api/LitJson/JsonMapper/8CC88196">ToJson<wbr>(object, <wbr>JsonWriter)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/73836752">ToObject<wbr>(JsonReader)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/3B7515FD">ToObject<wbr>(TextReader)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/AF555A53">ToObject<wbr>(string)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/75C31373">ToObject<wbr>&lt;T&gt;<wbr><wbr>(JsonReader)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/59B293DD">ToObject<wbr>&lt;T&gt;<wbr><wbr>(TextReader)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/5E598582">ToObject<wbr>&lt;T&gt;<wbr><wbr>(string)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/F6028264">ToObject<wbr>(string, <wbr>Type)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/AEFF7CAE">ToWrapper<wbr>(WrapperFactory, <wbr>JsonReader)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/AFBC0BB7">ToWrapper<wbr>(WrapperFactory, <wbr>string)<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/FDDC9635">UnregisterExporters<wbr>()<wbr></a></li>
-				<li><a href="/api/LitJson/JsonMapper/A610F9E7">UnregisterImporters<wbr>()<wbr></a></li>
 
+    <li class="header"><i class="fa fa-bookmark"></i> Categories</li>    
+        <li><a href="/blog/Announcements">Announcements</a></li>
+        <li><a href="/blog/Release-Notes">Release Notes</a></li>
+    
+    <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/blog/archive/2018/01">January, 2018</a></li>
+        <li><a href="/blog/archive/2017/12">December, 2017</a></li>
+        <li><a href="/blog/archive/2014/09">September, 2014</a></li>
+        <li><a href="/blog/archive/2013/04">April, 2013</a></li>
+        <li><a href="/blog/archive/2007/10">October, 2007</a></li>
+        <li><a href="/blog/archive/2007/08">August, 2007</a></li>
+    
+    <li class="header"><i class="fa fa-user"></i> Authors</li>    
+        <li><a href="/blog/author/devlead">devlead</a></li>
+        <li><a href="/blog/author/lbv">lbv</a></li>
 
                     </ul>
                             
@@ -172,81 +117,60 @@
 
 
 
-<section class="content-header">
-			<h3><a href="/api/LitJson/JsonMapper">JsonMapper</a>.</h3>
-	<h1>ToJson<wbr>(object, <wbr>JsonWriter)<wbr> <small>Method</small></h1>
-</section>
-<section class="content">
-	
-	
-	
-		<div class="panel panel-default">
-  			<div class="panel-body">	
-				<dl class="dl-horizontal">	
-						
-						<dt>Namespace</dt>
-						<dd><a href="/api/LitJson">LitJson</a></dd>
-					
-						<dt>Containing Type</dt>
-						<dd><a href="/api/LitJson/JsonMapper">JsonMapper</a></dd>		
-					
-				</dl>
-  			</div>
-		</div>
-
-	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static void ToJson(object obj, JsonWriter writer)</code></pre>
+	<section class="content-header">
+		<h1>LitJSON v0.12.0 released</h1>
+	</section>
+	<section class="content">
+		
 
 
+<dl class="dl-horizontal">
+    <dt><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Wednesday, January 24, 2018</dd>
+        <dt><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
+            <dt><i class="fa fa-user"></i> Author</dt>
+        <dd><a href="/blog/author/devlead">devlead</a></dd>
+</dl>
+
+<p>Version v0.12.0 of LitJSON has been released.</p>
+<p>This is a minor release of LitJSON, which based on community feedback and contribution, adds back support for .NET Framework version 2.0.</p>
+<p>This means we now with the pre-built binaries available on NuGet support:</p>
+<ul>
+<li>.NET Standard 2.0</li>
+<li>.NET Standard 1.5</li>
+<li>.NET Framework 4.5 and above</li>
+<li>.NET Framework 4.0</li>
+<li>.NET Framework 3.5 (including SQLCLR)</li>
+<li>.NET Framework 2.0</li>
+<li>Mono 4.4.2 and above</li>
+</ul>
+<p><strong>Changes in  this release</strong></p>
+<ul>
+<li>Added  .NET 2.0 target</li>
+<li>Updated build to Cake 0.25.0</li>
+<li>Updated to .NET Core SDK 2.1.4</li>
+<li>Updated PowerShell boostrapper to support PowerShell Core and non Windows Platforms</li>
+</ul>
+<p><strong>This release's contributors</strong></p>
+<ul>
+<li><a href="https://github.com/immitev">immitev</a></li>
+<li><a href="https://github.com/devlead">devlead</a></li>
+</ul>
 
 
+<hr />
 
-	<h1 id="Parameters">Parameters</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover three-cols">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-					<tbody><tr>
-						<td>obj</td>
-						<td>object</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>writer</td>
-						<td><a href="/api/LitJson/JsonWriter">JsonWriter</a></td>
-						<td></td>
-					</tr>
-			</tbody></table>
-		</div>
-	</div>	
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.12.0-released&t=LitJSON%20v0.12.0%20released" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/img/social_flat_rounded_rects_svg/Facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.12.0-released&text=LitJSON%20v0.12.0%20released:%20https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.12.0-released&via=litjsonnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/img/social_flat_rounded_rects_svg/Twitter.svg"></a></li>
+  <li><a href="https://plus.google.com/share?url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.12.0-released" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/assets/img/social_flat_rounded_rects_svg/Google+.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.12.0-released&title=LitJSON%20v0.12.0%20released" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.12.0-released&title=LitJSON%20v0.12.0%20released&summary=&source=https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.12.0-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/img/social_flat_rounded_rects_svg/LinkedIn.svg"></a></li>
+  <li><a href="mailto:?subject=LitJSON%20v0.12.0%20released&body=:%20https%3A%2F%2flitjson.net%2F%2Fblog%2F2018%2F01%2Flitjson-v0.12.0-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/img/social_flat_rounded_rects_svg/Email.svg"></a></li>
+</ul>
 
-	<h1 id="ReturnValue">Return Value</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover two-cols">
-				<thead>
-					<tr>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody><tr>
-					<td>void</td>
-					<td></td>
-				</tr>
-			</tbody></table>
-		</div>
-	</div>	
-
-
-	
-</section>
+	</section>
                 
             </div>           
             
@@ -261,7 +185,7 @@
     <a href="https://github.com/litjson/litjson"><i class="fa fa-github"></i> GitHub</a> |
     <a href="https://twitter.com/litjsonnet"><i class="fa fa-twitter"></i> Twitter</a> |
     <a href="https://gitter.im/LitJSON/lobby"><i class="fa fa-comment"></i> Gitter</a>
-    <br>
+    <br/>
     Generated by <a href="http://wyam.io">Wyam</a>
 </p>
             </footer>
@@ -273,10 +197,10 @@
         room: 'LitJSON/lobby'
     };
 </script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111612465-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111612465-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -323,5 +247,5 @@
                 }, 500);
             });
         </script>
-    
-</body></html>
+    </body>
+</html>
