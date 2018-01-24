@@ -1,5 +1,5 @@
 $ENV:CAKE_NUGET_USEINPROCESSCLIENT='true'
-$CakeVersion = "0.24.0-alpha0061"
+$CakeVersion = "0.25.0"
 
 # Make sure tools folder exists
 $PSScriptRoot = Split-Path $MyInvocation.MyCommand.Path -Parent
@@ -24,7 +24,8 @@ Function Unzip
 
 # Make sure Cake has been installed.
 #https://www.nuget.org/api/v2/package
-$NugetFeed = 'https://www.myget.org/F/cake/api/v2/package'
+#'https://www.myget.org/F/cake/api/v2/package'
+$NugetFeed = 'https://www.nuget.org/api/v2/package'
 
 $CakePath = Join-Path $ToolPath "Cake.$CakeVersion/Cake.exe"
 if (!(Test-Path $CakePath)) {
