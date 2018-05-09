@@ -4,7 +4,31 @@
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
 	<rights>2018</rights>
-	<updated>2018-01-24T10:59:42Z</updated>
+	<updated>2018-05-09T09:13:46Z</updated>
+	<entry>
+		<author>
+			<name>devlead</name>
+		</author>
+		<link href="https://litjson.net/blog/2018/05/litjson-v0.13.0-released" />
+		<id>https://litjson.net/blog/2018/05/litjson-v0.13.0-released</id>
+		<title>LitJSON v0.13.0 released</title>
+		<updated>2018-05-09T00:00:00Z</updated>
+		<content>&lt;p&gt;Version v0.13.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Changes in  this release&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for DateTimeOffset&lt;/li&gt;
+&lt;li&gt;Added method to check existence of key in JsonData&lt;/li&gt;
+&lt;li&gt;Fixed long / int cast issue&lt;/li&gt;
+&lt;li&gt;Fixed SourceLink line ending issues&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;This release's contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/blubbfish"&gt;blubbfish&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Version v0.13.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>devlead</name>

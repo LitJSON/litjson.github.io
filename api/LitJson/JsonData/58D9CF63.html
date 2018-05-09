@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>LitJSON - API - JsonData.this[string] Property</title>
+        <title>LitJSON - API - JsonData.ContainsKey(string) Method</title>
         <link href="/assets/css/mermaid.css" rel="stylesheet">
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -77,9 +77,10 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
 <p><a href="#Parameters">Parameters</a></p>
-<p><a href="#Value">Value</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -161,12 +162,12 @@
 				<li><a href="/api/LitJson/JsonData/FF51F54D">IsObject</a></li>
 				<li><a href="/api/LitJson/JsonData/BA48E67B">IsString</a></li>
 				<li><a href="/api/LitJson/JsonData/A64A1513">Keys</a></li>
-				<li class="selected"><a href="/api/LitJson/JsonData/963E61A4">this[string]</a></li>
+				<li><a href="/api/LitJson/JsonData/963E61A4">this[string]</a></li>
 				<li><a href="/api/LitJson/JsonData/C2AFA7F4">this[int]</a></li>
 			<li class="header">Method Members</li>
 				<li><a href="/api/LitJson/JsonData/434B465F">Add<wbr>(object)<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/7D7A5A36">Clear<wbr>()<wbr></a></li>
-				<li><a href="/api/LitJson/JsonData/58D9CF63">ContainsKey<wbr>(string)<wbr></a></li>
+				<li class="selected"><a href="/api/LitJson/JsonData/58D9CF63">ContainsKey<wbr>(string)<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/B9B10F27">Equals<wbr>(JsonData)<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/50195E16">GetJsonType<wbr>()<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/37A72A5E">SetJsonType<wbr>(JsonType)<wbr></a></li>
@@ -188,14 +189,18 @@
 
 <section class="content-header">
 			<h3><a href="/api/LitJson/JsonData">JsonData</a>.</h3>
-	<h1>this[string] <small>Property</small></h1>
+	<h1>ContainsKey<wbr>(string)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
-	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">
+    Determines whether the json contains an element that has the specified key.
+    </div>
+
 		<div class="panel panel-default">
-  			<div class="panel-body">
+  			<div class="panel-body">	
 				<dl class="dl-horizontal">	
 						
 						<dt>Namespace</dt>
@@ -209,7 +214,8 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public JsonData this[string prop_name] { get; set; }</code></pre>
+	<pre><code>public bool ContainsKey(string key)</code></pre>
+
 
 
 
@@ -226,15 +232,15 @@
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>prop_name</td>
+						<td>key</td>
 						<td>string</td>
-						<td></td>
+						<td>The key to locate in the json.</td>
 					</tr>
 			</tbody></table>
 		</div>
 	</div>	
 
-	<h1 id="Value">Value</h1>
+	<h1 id="ReturnValue">Return Value</h1>
 	<div class="box">
 		<div class="box-body no-padding table-responsive">
 			<table class="table table-striped table-hover two-cols">
@@ -245,8 +251,8 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td><a href="/api/LitJson/JsonData">JsonData</a></td>
-					<td></td>
+					<td>bool</td>
+					<td>true if the json contains an element that has the specified key; otherwise, false.</td>
 				</tr>
 			</tbody></table>
 		</div>
