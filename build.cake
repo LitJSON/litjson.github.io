@@ -1,6 +1,6 @@
 #tool "nuget:https://api.nuget.org/v3/index.json?package=KuduSync.NET&version=1.3.1"
-#tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&version=1.2.0"
-#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=1.2.0"
+#tool "nuget:https://api.nuget.org/v3/index.json?package=Wyam&version=1.6.0"
+#addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Wyam&version=1.6.0"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Git&version=0.16.1"
 #addin "nuget:https://api.nuget.org/v3/index.json?package=Cake.Kudu&version=0.5.0"
 
