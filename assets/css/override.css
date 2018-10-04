@@ -6,7 +6,7 @@
 }
 .gitter-chat-embed {
   top: 49px;
-  border-top: 1px solid black;
+  border-top: 1px solid #000;
   z-index: 10000;
 }
 ul.share-buttons {
