@@ -6,9 +6,9 @@
         Tuple.Create("API", Context.GetLink("api")),
         Tuple.Create("<i class=\"fa fa-github\"></i> Source", "https://github.com/LitJSON/litjson")
     };
-    foreach(Tuple<string, string> page in pages)
+    foreach(Tuple<string, string> pageTuple in pages)
     {
-        string active = Context.GetLink(Document).StartsWith(page.Item2) ? "active" : null;
-        <li class="@active"><a href="@page.Item2">@Html.Raw(page.Item1)</a></li>
+        string active = Context.GetLink(Document).StartsWith(pageTuple.Item2) ? "active" : null;
+        <li class="@active"><a href="@pageTuple.Item2">@Html.Raw(pageTuple.Item1)</a></li>
     }
 }
