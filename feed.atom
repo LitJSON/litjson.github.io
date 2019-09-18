@@ -3,8 +3,32 @@
 	<link rel="self" href="https://litjson.net/" />
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
-	<rights>2018</rights>
-	<updated>2018-11-26T14:25:55Z</updated>
+	<rights>2019</rights>
+	<updated>2019-09-18T14:32:54Z</updated>
+	<entry>
+		<author>
+			<name>devlead</name>
+		</author>
+		<link href="https://litjson.net/blog/2019/09/litjson-v0.14.0-released" />
+		<id>https://litjson.net/blog/2019/09/litjson-v0.14.0-released</id>
+		<title>LitJSON v0.14.0 released</title>
+		<updated>2019-09-18T00:00:00Z</updated>
+		<content>&lt;p&gt;Version v0.14.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Changes in  this release&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed package license warning (use license expression)&lt;/li&gt;
+&lt;li&gt;Fixed DateTimeOffset support.&lt;/li&gt;
+&lt;li&gt;Added the ability to remove elements from JsonData objects as well as JsonData arrays.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;This release's contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kenykhung"&gt;kenykhung&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hogiyogi597"&gt;hogiyogi597&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Version v0.14.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>devlead</name>

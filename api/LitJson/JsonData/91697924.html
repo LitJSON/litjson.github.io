@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>LitJSON - API - JsonData.ToJson(JsonWriter) Method</title>
+        <title>LitJSON - API - JsonData.Remove(object) Method</title>
         <link href="/assets/css/mermaid.css" rel="stylesheet">
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -169,10 +169,10 @@
 				<li><a href="/api/LitJson/JsonData/58D9CF63">ContainsKey<wbr>(string)<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/B9B10F27">Equals<wbr>(JsonData)<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/50195E16">GetJsonType<wbr>()<wbr></a></li>
-				<li><a href="/api/LitJson/JsonData/91697924">Remove<wbr>(object)<wbr></a></li>
+				<li class="selected"><a href="/api/LitJson/JsonData/91697924">Remove<wbr>(object)<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/37A72A5E">SetJsonType<wbr>(JsonType)<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/B0186617">ToJson<wbr>()<wbr></a></li>
-				<li class="selected"><a href="/api/LitJson/JsonData/1B9DC9C4">ToJson<wbr>(JsonWriter)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonData/1B9DC9C4">ToJson<wbr>(JsonWriter)<wbr></a></li>
 				<li><a href="/api/LitJson/JsonData/21971DAF">ToString<wbr>()<wbr></a></li>
 
 
@@ -189,7 +189,7 @@
 
 <section class="content-header">
 			<h3><a href="/api/LitJson/JsonData">JsonData</a>.</h3>
-	<h1>ToJson<wbr>(JsonWriter)<wbr> <small>Method</small></h1>
+	<h1>Remove<wbr>(object)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
@@ -210,7 +210,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public void ToJson(JsonWriter writer)</code></pre>
+	<pre><code>public bool Remove(object obj)</code></pre>
 
 
 
@@ -228,8 +228,8 @@
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>writer</td>
-						<td><a href="/api/LitJson/JsonWriter">JsonWriter</a></td>
+						<td>obj</td>
+						<td>object</td>
 						<td></td>
 					</tr>
 			</tbody></table>
@@ -247,7 +247,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>void</td>
+					<td>bool</td>
 					<td></td>
 				</tr>
 			</tbody></table>
