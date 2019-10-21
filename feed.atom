@@ -4,7 +4,27 @@
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
 	<rights>2019</rights>
-	<updated>2019-09-18T14:32:54Z</updated>
+	<updated>2019-10-21T15:26:42Z</updated>
+	<entry>
+		<author>
+			<name>devlead</name>
+		</author>
+		<link href="https://litjson.net/blog/2019/10/litjson-v0.15.0-released" />
+		<id>https://litjson.net/blog/2019/10/litjson-v0.15.0-released</id>
+		<title>LitJSON v0.15.0 released</title>
+		<updated>2019-10-21T00:00:00Z</updated>
+		<content>&lt;p&gt;Version v0.15.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Changes in  this release&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed issue with serializing non string dictionary key ( &lt;a href="https://github.com/LitJSON/litjson/issues/104"&gt;#104&lt;/a&gt; )&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;This release's contributors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/grantfar"&gt;grantfar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Version v0.15.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>devlead</name>
