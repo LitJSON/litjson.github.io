@@ -5,8 +5,8 @@
 		<link>https://litjson.net/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Fri, 14 Feb 2020 08:19:53 GMT</pubDate>
-		<lastBuildDate>Fri, 14 Feb 2020 08:19:53 GMT</lastBuildDate>
+		<pubDate>Fri, 14 Feb 2020 08:37:40 GMT</pubDate>
+		<lastBuildDate>Fri, 14 Feb 2020 08:37:40 GMT</lastBuildDate>
 		<item>
 			<title>Litjson 0.16.0 released</title>
 			<link>https://litjson.net/blog/2020/01/litjson-0.16.0-released</link>
@@ -22,8 +22,9 @@
 &lt;p&gt;In this version we've got a bug fix around empty array handling and improved float support.&lt;/p&gt;
 &lt;p&gt;Contributions were included from:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/kdw9502"&gt;kdw9502&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/summitn"&gt;summitn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Full details of everything that was included in this release can be seen below.&lt;/p&gt;
 &lt;!--excerpt--&gt;

@@ -4,7 +4,7 @@
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
 	<rights>2020</rights>
-	<updated>2020-02-14T08:19:53Z</updated>
+	<updated>2020-02-14T08:37:40Z</updated>
 	<entry>
 		<author>
 			<name>devlead</name>
@@ -17,8 +17,9 @@
 &lt;p&gt;In this version we've got a bug fix around empty array handling and improved float support.&lt;/p&gt;
 &lt;p&gt;Contributions were included from:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/kdw9502"&gt;kdw9502&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/summitn"&gt;summitn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Full details of everything that was included in this release can be seen below.&lt;/p&gt;
 &lt;!--excerpt--&gt;
