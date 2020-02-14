@@ -3,8 +3,43 @@
 	<link rel="self" href="https://litjson.net/" />
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
-	<rights>2019</rights>
-	<updated>2019-10-21T15:26:42Z</updated>
+	<rights>2020</rights>
+	<updated>2020-02-14T08:19:53Z</updated>
+	<entry>
+		<author>
+			<name>devlead</name>
+		</author>
+		<link href="https://litjson.net/blog/2020/01/litjson-0.16.0-released" />
+		<id>https://litjson.net/blog/2020/01/litjson-0.16.0-released</id>
+		<title>Litjson 0.16.0 released</title>
+		<updated>2020-01-22T00:00:00Z</updated>
+		<content>&lt;p&gt;Version 0.16.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;In this version we've got a bug fix around empty array handling and improved float support.&lt;/p&gt;
+&lt;p&gt;Contributions were included from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kdw9502"&gt;kdw9502&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details of everything that was included in this release can be seen below.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;h3 id="issues"&gt;Issues&lt;/h3&gt;
+&lt;p&gt;As part of this release we had &lt;a href="https://github.com/LitJSON/litjson/milestone/1?closed=1"&gt;3 issues&lt;/a&gt; closed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;enhancement&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/pull/112"&gt;&lt;strong&gt;#112&lt;/strong&gt;&lt;/a&gt; Support for float.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;bug&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/issues/98"&gt;&lt;strong&gt;#98&lt;/strong&gt;&lt;/a&gt; LitJson doesnt write empty arrays.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/issues/38"&gt;&lt;strong&gt;#38&lt;/strong&gt;&lt;/a&gt; In version 0.9.0 empty arrays are still handled incorrectly.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Version 0.16.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;In this version we've got a bug fix around empty array handling and improved float support.&lt;/p&gt;
+&lt;p&gt;Contributions were included from:&lt;/p&gt;
+
+&lt;p&gt;Full details of everything that was included in this release can be seen below.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>devlead</name>

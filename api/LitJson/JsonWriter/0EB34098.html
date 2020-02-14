@@ -1,22 +1,20 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" />
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>LitJSON - October, 2007</title>
+        <title>LitJSON - API - JsonWriter.Write(float) Method</title>
         <link href="/assets/css/mermaid.css" rel="stylesheet">
         <link href="/assets/css/highlight.css" rel="stylesheet">
-        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
-        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
-        <link href="/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/assets/css/theme/theme.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/assets/css/override.css" rel="stylesheet" />
+        <link href="/assets/css/override.css" rel="stylesheet">
         <script src="/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>        
         <script src="/assets/js/app.min.js"></script>         
@@ -62,9 +60,9 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li class="active"><a href="/blog">Blog</a></li>
+                                    <li><a href="/blog">Blog</a></li>
         <li><a href="/docs">Documentation</a></li>
-        <li><a href="/api">API</a></li>
+        <li class="active"><a href="/api">API</a></li>
         <li><a href="https://github.com/LitJSON/litjson"><i class="fa fa-github"></i> Source</a></li>
  
                         </ul>       
@@ -79,35 +77,99 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"></div>
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Parameters">Parameters</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
+<hr class="infobar-hidden">
+</div>
 
                 </section>
                 <section class="sidebar">    
                                      
-                    
+                    	
+	    <script src="/assets/js/lunr.min.js"></script>
+    <script src="/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
+    </script>
+	
+    <hr>
 
                     <ul class="sidebar-menu">
                         
+			<li class="header">Namespace</li>
+		<li><a href="/api/LitJson">LitJson</a></li>
+		<li class="header">Type</li>
+		<li><a href="/api/LitJson/JsonWriter">JsonWriter</a></li>
+		<li role="separator" class="divider"></li>
+			<li class="header">Constructors</li>
+				<li><a href="/api/LitJson/JsonWriter/0E8E270E">JsonWriter<wbr>()<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/E66EA02E">JsonWriter<wbr>(StringBuilder)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/C15DAF3D">JsonWriter<wbr>(TextWriter)<wbr></a></li>
+			<li class="header">Property Members</li>
+				<li><a href="/api/LitJson/JsonWriter/6513A49C">IndentValue</a></li>
+				<li><a href="/api/LitJson/JsonWriter/B6391FAB">LowerCaseProperties</a></li>
+				<li><a href="/api/LitJson/JsonWriter/B75976A4">PrettyPrint</a></li>
+				<li><a href="/api/LitJson/JsonWriter/5F9FF149">TextWriter</a></li>
+				<li><a href="/api/LitJson/JsonWriter/107CAEB0">Validate</a></li>
+			<li class="header">Method Members</li>
+				<li><a href="/api/LitJson/JsonWriter/97433DF9">Reset<wbr>()<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/25D7D7F6">ToString<wbr>()<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/FAC2E4DD">Write<wbr>(bool)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/55915BF7">Write<wbr>(decimal)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/F2A48ECC">Write<wbr>(double)<wbr></a></li>
+				<li class="selected"><a href="/api/LitJson/JsonWriter/0EB34098">Write<wbr>(float)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/5673D782">Write<wbr>(int)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/3B1646D2">Write<wbr>(long)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/17197553">Write<wbr>(string)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/00BC1B7C">Write<wbr>(ulong)<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/E20EDA3F">WriteArrayEnd<wbr>()<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/2F288756">WriteArrayStart<wbr>()<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/FC380F01">WriteObjectEnd<wbr>()<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/BCBC7C4D">WriteObjectStart<wbr>()<wbr></a></li>
+				<li><a href="/api/LitJson/JsonWriter/76719A52">WritePropertyName<wbr>(string)<wbr></a></li>
 
-    <li class="header"><i class="fa fa-bookmark"></i> Categories</li>    
-        <li><a href="/blog/Announcements">Announcements</a></li>
-        <li><a href="/blog/Release-Notes">Release Notes</a></li>
-    
-    <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
-        <li><a href="/blog/archive/2020/01">January, 2020</a></li>
-        <li><a href="/blog/archive/2019/10">October, 2019</a></li>
-        <li><a href="/blog/archive/2019/09">September, 2019</a></li>
-        <li><a href="/blog/archive/2018/05">May, 2018</a></li>
-        <li><a href="/blog/archive/2018/01">January, 2018</a></li>
-        <li><a href="/blog/archive/2017/12">December, 2017</a></li>
-        <li><a href="/blog/archive/2014/09">September, 2014</a></li>
-        <li><a href="/blog/archive/2013/04">April, 2013</a></li>
-        <li class="selected"><a href="/blog/archive/2007/10">October, 2007</a></li>
-        <li><a href="/blog/archive/2007/08">August, 2007</a></li>
-    
-    <li class="header"><i class="fa fa-user"></i> Authors</li>    
-        <li><a href="/blog/author/devlead">devlead</a></li>
-        <li><a href="/blog/author/lbv">lbv</a></li>
 
                     </ul>
                             
@@ -120,37 +182,76 @@
 
 
 
-		<section class="content-header">
-			<h1>October, 2007</h1>
-		</section>
-	<section class="content">
-		
+<section class="content-header">
+			<h3><a href="/api/LitJson/JsonWriter">JsonWriter</a>.</h3>
+	<h1>Write<wbr>(float)<wbr> <small>Method</small></h1>
+</section>
+<section class="content">
+	
+	
+	
+		<div class="panel panel-default">
+  			<div class="panel-body">	
+				<dl class="dl-horizontal">	
+						
+						<dt>Namespace</dt>
+						<dd><a href="/api/LitJson">LitJson</a></dd>
+					
+						<dt>Containing Type</dt>
+						<dd><a href="/api/LitJson/JsonWriter">JsonWriter</a></dd>		
+					
+				</dl>
+  			</div>
+		</div>
 
-        <h2><a href="/blog/2007/10/litjson-v0.5.0-released">LitJSON v0.5.0 released</a></h2>
-<dl class="dl-horizontal">
-    <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Thursday, October 4, 2007</dd>
-        <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
-            <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/blog/author/lbv">lbv</a></dd>
-</dl>
-            <div>
-                <p>Version v0.5.0 of LitJSON has been released.</p>
-                <a href="/blog/2007/10/litjson-v0.5.0-released">Read more...</a>
-            </div>
-        <hr />
-    <nav>
-        <ul class="pager">
-            <li class="previous">                
-            </li>
-            <li class="next">
-            </li>
-        </ul>
-    </nav>
+	<h1 id="Syntax">Syntax</h1>
+	<pre><code>public void Write(float number)</code></pre>
 
 
-	</section>
+
+
+
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>number</td>
+						<td>float</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+	<h1 id="ReturnValue">Return Value</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+					<td>void</td>
+					<td></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+
+	
+</section>
                 
             </div>           
             
@@ -165,7 +266,7 @@
     <a href="https://github.com/litjson/litjson"><i class="fa fa-github"></i> GitHub</a> |
     <a href="https://twitter.com/litjsonnet"><i class="fa fa-twitter"></i> Twitter</a> |
     <a href="https://gitter.im/LitJSON/lobby"><i class="fa fa-comment"></i> Gitter</a>
-    <br/>
+    <br>
     Generated by <a href="http://wyam.io">Wyam</a>
 </p>
             </footer>
@@ -177,10 +278,10 @@
         room: 'LitJSON/lobby'
     };
 </script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111612465-1"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-111612465-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -227,5 +328,5 @@
                 }, 500);
             });
         </script>
-    </body>
-</html>
+    
+</body></html>

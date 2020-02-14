@@ -4,9 +4,42 @@
 		<title>LitJSON</title>
 		<link>https://litjson.net/</link>
 		<description />
-		<copyright>2019</copyright>
-		<pubDate>Mon, 21 Oct 2019 15:26:42 GMT</pubDate>
-		<lastBuildDate>Mon, 21 Oct 2019 15:26:42 GMT</lastBuildDate>
+		<copyright>2020</copyright>
+		<pubDate>Fri, 14 Feb 2020 08:19:53 GMT</pubDate>
+		<lastBuildDate>Fri, 14 Feb 2020 08:19:53 GMT</lastBuildDate>
+		<item>
+			<title>Litjson 0.16.0 released</title>
+			<link>https://litjson.net/blog/2020/01/litjson-0.16.0-released</link>
+			<description>&lt;p&gt;Version 0.16.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;In this version we've got a bug fix around empty array handling and improved float support.&lt;/p&gt;
+&lt;p&gt;Contributions were included from:&lt;/p&gt;
+
+&lt;p&gt;Full details of everything that was included in this release can be seen below.&lt;/p&gt;</description>
+			<author>devlead</author>
+			<guid>https://litjson.net/blog/2020/01/litjson-0.16.0-released</guid>
+			<pubDate>Wed, 22 Jan 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version 0.16.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;In this version we've got a bug fix around empty array handling and improved float support.&lt;/p&gt;
+&lt;p&gt;Contributions were included from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kdw9502"&gt;kdw9502&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details of everything that was included in this release can be seen below.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;h3 id="issues"&gt;Issues&lt;/h3&gt;
+&lt;p&gt;As part of this release we had &lt;a href="https://github.com/LitJSON/litjson/milestone/1?closed=1"&gt;3 issues&lt;/a&gt; closed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;enhancement&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/pull/112"&gt;&lt;strong&gt;#112&lt;/strong&gt;&lt;/a&gt; Support for float.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;bug&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/issues/98"&gt;&lt;strong&gt;#98&lt;/strong&gt;&lt;/a&gt; LitJson doesnt write empty arrays.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/issues/38"&gt;&lt;strong&gt;#38&lt;/strong&gt;&lt;/a&gt; In version 0.9.0 empty arrays are still handled incorrectly.&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>LitJSON v0.15.0 released</title>
 			<link>https://litjson.net/blog/2019/10/litjson-v0.15.0-released</link>
