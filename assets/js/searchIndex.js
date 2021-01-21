@@ -39,42 +39,42 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"JsonMapper",
-            content:"JsonMapper",
+            title:"WrapperFactory",
+            content:"WrapperFactory",
             description:'',
             tags:''
         },
         {
-            url:'/api/LitJson/JsonMapper',
-            title:"JsonMapper",
+            url:'/api/LitJson/WrapperFactory',
+            title:"WrapperFactory",
             description:""
         }
     );
     a(
         {
             id:1,
-            title:"JsonReader",
-            content:"JsonReader",
+            title:"JsonMockWrapper",
+            content:"JsonMockWrapper",
             description:'',
             tags:''
         },
         {
-            url:'/api/LitJson/JsonReader',
-            title:"JsonReader",
+            url:'/api/LitJson/JsonMockWrapper',
+            title:"JsonMockWrapper",
             description:""
         }
     );
     a(
         {
             id:2,
-            title:"ImporterFunc",
-            content:"ImporterFunc",
+            title:"JsonData",
+            content:"JsonData",
             description:'',
             tags:''
         },
         {
-            url:'/api/LitJson/ImporterFunc_2',
-            title:"ImporterFunc<TJson, TValue>",
+            url:'/api/LitJson/JsonData',
+            title:"JsonData",
             description:""
         }
     );
@@ -109,28 +109,28 @@ var searchModule = function() {
     a(
         {
             id:5,
-            title:"JsonMockWrapper",
-            content:"JsonMockWrapper",
+            title:"JsonMapper",
+            content:"JsonMapper",
             description:'',
             tags:''
         },
         {
-            url:'/api/LitJson/JsonMockWrapper',
-            title:"JsonMockWrapper",
+            url:'/api/LitJson/JsonMapper',
+            title:"JsonMapper",
             description:""
         }
     );
     a(
         {
             id:6,
-            title:"JsonType",
-            content:"JsonType",
+            title:"JsonToken",
+            content:"JsonToken",
             description:'',
             tags:''
         },
         {
-            url:'/api/LitJson/JsonType',
-            title:"JsonType",
+            url:'/api/LitJson/JsonToken',
+            title:"JsonToken",
             description:""
         }
     );
@@ -151,28 +151,28 @@ var searchModule = function() {
     a(
         {
             id:8,
-            title:"WrapperFactory",
-            content:"WrapperFactory",
+            title:"JsonReader",
+            content:"JsonReader",
             description:'',
             tags:''
         },
         {
-            url:'/api/LitJson/WrapperFactory',
-            title:"WrapperFactory",
+            url:'/api/LitJson/JsonReader',
+            title:"JsonReader",
             description:""
         }
     );
     a(
         {
             id:9,
-            title:"JsonToken",
-            content:"JsonToken",
+            title:"ImporterFunc",
+            content:"ImporterFunc",
             description:'',
             tags:''
         },
         {
-            url:'/api/LitJson/JsonToken',
-            title:"JsonToken",
+            url:'/api/LitJson/ImporterFunc_2',
+            title:"ImporterFunc<TJson, TValue>",
             description:""
         }
     );
@@ -193,14 +193,14 @@ var searchModule = function() {
     a(
         {
             id:11,
-            title:"JsonData",
-            content:"JsonData",
+            title:"JsonType",
+            content:"JsonType",
             description:'',
             tags:''
         },
         {
-            url:'/api/LitJson/JsonData',
-            title:"JsonData",
+            url:'/api/LitJson/JsonType',
+            title:"JsonType",
             description:""
         }
     );
