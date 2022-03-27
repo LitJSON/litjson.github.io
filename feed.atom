@@ -3,8 +3,25 @@
 	<link rel="self" href="https://litjson.net/" />
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
-	<rights>2021</rights>
-	<updated>2021-01-21T10:13:31Z</updated>
+	<rights>2022</rights>
+	<updated>2022-03-27T21:22:17Z</updated>
+	<entry>
+		<author>
+			<name>devlead</name>
+		</author>
+		<link href="https://litjson.net/blog/2022/03/litjson-v0.18.0-released" />
+		<id>https://litjson.net/blog/2022/03/litjson-v0.18.0-released</id>
+		<title>Litjson 0.18.0 released</title>
+		<updated>2022-03-27T00:00:00Z</updated>
+		<content>&lt;p&gt;Version 0.18.0 of LitJSON has been released.&lt;/p&gt;
+&lt;p&gt;This version is built using .NET 6 SDK and adds .NET 6 &amp;amp; .NET Standard 2.1 framework monikers.&lt;/p&gt;
+&lt;p&gt;Contributions were included from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Version 0.18.0 of LitJSON has been released.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>devlead</name>
