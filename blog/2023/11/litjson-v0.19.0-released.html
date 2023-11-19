@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>LitJSON - September, 2014</title>
+        <title>LitJSON - Litjson v0.19.0 released</title>
         <link href="/assets/css/mermaid.css" rel="stylesheet">
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -79,6 +79,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
+        <div><p><a href="https://github.com/LitJSON/litjson.github.io/blob/develop/input/blog/2023-11-19-litjson-v0.19.0-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -103,7 +104,7 @@
         <li><a href="/blog/archive/2018/05">May, 2018</a></li>
         <li><a href="/blog/archive/2018/01">January, 2018</a></li>
         <li><a href="/blog/archive/2017/12">December, 2017</a></li>
-        <li class="selected"><a href="/blog/archive/2014/09">September, 2014</a></li>
+        <li><a href="/blog/archive/2014/09">September, 2014</a></li>
         <li><a href="/blog/archive/2013/04">April, 2013</a></li>
         <li><a href="/blog/archive/2007/10">October, 2007</a></li>
         <li><a href="/blog/archive/2007/08">August, 2007</a></li>
@@ -124,34 +125,79 @@
 
 
 		<section class="content-header">
-			<h1>September, 2014</h1>
+			<h1>Litjson v0.19.0 released</h1>
 		</section>
 	<section class="content">
 		
 
-        <h2><a href="/blog/2014/09/litjson-v0.9.0-released">LitJSON v0.9.0 released</a></h2>
+
 <dl class="dl-horizontal">
     <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Monday, September 8, 2014</dd>
+    <dd>Sunday, November 19, 2023</dd>
         <dt><i class="fa fa-bookmark"></i> Category</dt>
         <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
             <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/blog/author/lbv">lbv</a></dd>
+        <dd><a href="/blog/author/devlead">devlead</a></dd>
 </dl>
-            <div>
-                <p>Version v0.9.0 of LitJSON has been released.</p>
-                <a href="/blog/2014/09/litjson-v0.9.0-released">Read more...</a>
-            </div>
-        <hr />
-    <nav>
-        <ul class="pager">
-            <li class="previous">                
-            </li>
-            <li class="next">
-            </li>
-        </ul>
-    </nav>
 
+
+<p>Version <strong>0.19.0</strong> of LitJSON has been released. Take it for a spin and give us feedback on our <a href="https://github.com/LitJSON/litjson/discussions/158">discussion board</a>.</p>
+<p>This release includes new features, improvements, and bug fixes since the <a href="/blog/2022/03/litjson-v0.18.0-released">LitJSON 0.18.0 release</a>! 🚀</p>
+<h3 id="highlights-of-this-release">Highlights of this release</h3>
+<ul>
+<li>.NET 8 Support</li>
+<li>LitJson.Source</li>
+</ul>
+<h3 id="net-8-support">.NET 8 Support</h3>
+<p>LitJSON adds the <code>net8.0</code> target framework moniker which now means it supports the following frameworks</p>
+<ul>
+<li>.NET 8</li>
+<li>.NET 6</li>
+<li>.NET Standard 2.1</li>
+<li>.NET Standard 2.0</li>
+<li>.NET Standard 1.5</li>
+<li>.NET Framework 4.8</li>
+<li>.NET Framework 4.5</li>
+<li>.NET Framework 4.0</li>
+<li>.NET Framework 3.5 (including SQLCLR)</li>
+<li>.NET Framework 2.0</li>
+<li>Mono 4.4.2 and above</li>
+</ul>
+<h3 id="litjson.source">LitJson.Source</h3>
+<p>Which 0.19.0 we also ship <a href="https://www.nuget.org/packages/LitJson.Source">LitJson.Source</a>, which is a source code NuGet package, which means LitJSON gets compiled and embedded with your application/assembly. Useful if you need a zero-dependency JSON serializer within your own code.</p>
+<h3 id="contributors">Contributors</h3>
+<p>This release was made possible thanks to the contribution of these awesome members of the community listed below:</p>
+<ul>
+<li><a href="https://github.com/devlead">devlead</a></li>
+<li>Dave Black</li>
+<li><a href="https://github.com/udlose">udlose</a></li>
+</ul>
+<p>Full details of everything that was included in this release can be seen below.</p>
+<!--excerpt-->
+<h3 id="issues">Issues</h3>
+<p>As part of this release we had <a href="https://github.com/LitJSON/litjson/milestone/2?closed=1">10 issues</a> closed.</p>
+<p><strong>enhancement</strong></p>
+<ul>
+<li><a href="https://github.com/LitJSON/litjson/issues/154"><strong>#154</strong></a> Update System.Reflection.TypeExtensions to 4.7.0.</li>
+<li><a href="https://github.com/LitJSON/litjson/issues/153"><strong>#153</strong></a> Update System.Collections.*  to 4.3.0.</li>
+<li><a href="https://github.com/LitJSON/litjson/issues/146"><strong>#146</strong></a> Add .NET 8 and update to .NET 8.0.100 SDK.</li>
+</ul>
+<p><strong>bug</strong></p>
+<ul>
+<li><a href="https://github.com/LitJSON/litjson/issues/143"><strong>#143</strong></a> Race conditions affecting JsonMapper and its usage of static members w/o synchronization.</li>
+</ul>
+
+
+<hr />
+
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2flitjson.net%2F%2Fblog%2F2023%2F11%2Flitjson-v0.19.0-released&t=Litjson%20v0.19.0%20released" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/img/social_flat_rounded_rects_svg/Facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2flitjson.net%2F%2Fblog%2F2023%2F11%2Flitjson-v0.19.0-released&text=Litjson%20v0.19.0%20released:%20https%3A%2F%2flitjson.net%2F%2Fblog%2F2023%2F11%2Flitjson-v0.19.0-released&via=litjsonnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/img/social_flat_rounded_rects_svg/Twitter.svg"></a></li>
+  <li><a href="https://plus.google.com/share?url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2023%2F11%2Flitjson-v0.19.0-released" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="/assets/img/social_flat_rounded_rects_svg/Google+.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2023%2F11%2Flitjson-v0.19.0-released&title=Litjson%20v0.19.0%20released" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/img/social_flat_rounded_rects_svg/Reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2flitjson.net%2F%2Fblog%2F2023%2F11%2Flitjson-v0.19.0-released&title=Litjson%20v0.19.0%20released&summary=&source=https%3A%2F%2flitjson.net%2F%2Fblog%2F2023%2F11%2Flitjson-v0.19.0-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/img/social_flat_rounded_rects_svg/LinkedIn.svg"></a></li>
+  <li><a href="mailto:?subject=Litjson%20v0.19.0%20released&body=:%20https%3A%2F%2flitjson.net%2F%2Fblog%2F2023%2F11%2Flitjson-v0.19.0-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/img/social_flat_rounded_rects_svg/Email.svg"></a></li>
+</ul>
 
 	</section>
                 

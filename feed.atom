@@ -3,8 +3,76 @@
 	<link rel="self" href="https://litjson.net/" />
 	<id>https://litjson.net/</id>
 	<title>LitJSON</title>
-	<rights>2022</rights>
-	<updated>2022-03-27T21:22:17Z</updated>
+	<rights>2023</rights>
+	<updated>2023-11-19T21:02:38Z</updated>
+	<entry>
+		<author>
+			<name>devlead</name>
+		</author>
+		<link href="https://litjson.net/blog/2023/11/litjson-v0.19.0-released" />
+		<id>https://litjson.net/blog/2023/11/litjson-v0.19.0-released</id>
+		<title>Litjson v0.19.0 released</title>
+		<updated>2023-11-19T00:00:00Z</updated>
+		<content>&lt;p&gt;Version &lt;strong&gt;0.19.0&lt;/strong&gt; of LitJSON has been released. Take it for a spin and give us feedback on our &lt;a href="https://github.com/LitJSON/litjson/discussions/158"&gt;discussion board&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release includes new features, improvements, and bug fixes since the &lt;a href="/blog/2022/03/litjson-v0.18.0-released"&gt;LitJSON 0.18.0 release&lt;/a&gt;! 🚀&lt;/p&gt;
+&lt;h3 id="highlights-of-this-release"&gt;Highlights of this release&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET 8 Support&lt;/li&gt;
+&lt;li&gt;LitJson.Source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="net-8-support"&gt;.NET 8 Support&lt;/h3&gt;
+&lt;p&gt;LitJSON adds the &lt;code&gt;net8.0&lt;/code&gt; target framework moniker which now means it supports the following frameworks&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;.NET 8&lt;/li&gt;
+&lt;li&gt;.NET 6&lt;/li&gt;
+&lt;li&gt;.NET Standard 2.1&lt;/li&gt;
+&lt;li&gt;.NET Standard 2.0&lt;/li&gt;
+&lt;li&gt;.NET Standard 1.5&lt;/li&gt;
+&lt;li&gt;.NET Framework 4.8&lt;/li&gt;
+&lt;li&gt;.NET Framework 4.5&lt;/li&gt;
+&lt;li&gt;.NET Framework 4.0&lt;/li&gt;
+&lt;li&gt;.NET Framework 3.5 (including SQLCLR)&lt;/li&gt;
+&lt;li&gt;.NET Framework 2.0&lt;/li&gt;
+&lt;li&gt;Mono 4.4.2 and above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="litjson.source"&gt;LitJson.Source&lt;/h3&gt;
+&lt;p&gt;Which 0.19.0 we also ship &lt;a href="https://www.nuget.org/packages/LitJson.Source"&gt;LitJson.Source&lt;/a&gt;, which is a source code NuGet package, which means LitJSON gets compiled and embedded with your application/assembly. Useful if you need a zero-dependency JSON serializer within your own code.&lt;/p&gt;
+&lt;h3 id="contributors"&gt;Contributors&lt;/h3&gt;
+&lt;p&gt;This release was made possible thanks to the contribution of these awesome members of the community listed below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/devlead"&gt;devlead&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dave Black&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/udlose"&gt;udlose&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Full details of everything that was included in this release can be seen below.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;h3 id="issues"&gt;Issues&lt;/h3&gt;
+&lt;p&gt;As part of this release we had &lt;a href="https://github.com/LitJSON/litjson/milestone/2?closed=1"&gt;10 issues&lt;/a&gt; closed.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;enhancement&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/issues/154"&gt;&lt;strong&gt;#154&lt;/strong&gt;&lt;/a&gt; Update System.Reflection.TypeExtensions to 4.7.0.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/issues/153"&gt;&lt;strong&gt;#153&lt;/strong&gt;&lt;/a&gt; Update System.Collections.*  to 4.3.0.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/issues/146"&gt;&lt;strong&gt;#146&lt;/strong&gt;&lt;/a&gt; Add .NET 8 and update to .NET 8.0.100 SDK.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;bug&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/LitJSON/litjson/issues/143"&gt;&lt;strong&gt;#143&lt;/strong&gt;&lt;/a&gt; Race conditions affecting JsonMapper and its usage of static members w/o synchronization.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;Version &lt;strong&gt;0.19.0&lt;/strong&gt; of LitJSON has been released. Take it for a spin and give us feedback on our &lt;a href="https://github.com/LitJSON/litjson/discussions/158"&gt;discussion board&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This release includes new features, improvements, and bug fixes since the &lt;a href="/blog/2022/03/litjson-v0.18.0-released"&gt;LitJSON 0.18.0 release&lt;/a&gt;! 🚀&lt;/p&gt;
+
+
+
+&lt;p&gt;LitJSON adds the &lt;code&gt;net8.0&lt;/code&gt; target framework moniker which now means it supports the following frameworks&lt;/p&gt;
+
+
+&lt;p&gt;Which 0.19.0 we also ship &lt;a href="https://www.nuget.org/packages/LitJson.Source"&gt;LitJson.Source&lt;/a&gt;, which is a source code NuGet package, which means LitJSON gets compiled and embedded with your application/assembly. Useful if you need a zero-dependency JSON serializer within your own code.&lt;/p&gt;
+
+&lt;p&gt;This release was made possible thanks to the contribution of these awesome members of the community listed below:&lt;/p&gt;
+
+&lt;p&gt;Full details of everything that was included in this release can be seen below.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<author>
 			<name>devlead</name>

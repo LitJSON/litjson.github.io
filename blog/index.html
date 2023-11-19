@@ -94,6 +94,7 @@
         <li><a href="/blog/Release-Notes">Release Notes</a></li>
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/blog/archive/2023/11">November, 2023</a></li>
         <li><a href="/blog/archive/2022/03">March, 2022</a></li>
         <li><a href="/blog/archive/2021/01">January, 2021</a></li>
         <li><a href="/blog/archive/2020/01">January, 2020</a></li>
@@ -128,6 +129,64 @@
 	<section class="content">
 		
 
+        <h2><a href="/blog/2023/11/litjson-v0.19.0-released">Litjson v0.19.0 released</a></h2>
+<dl class="dl-horizontal">
+    <dt><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Sunday, November 19, 2023</dd>
+        <dt><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
+            <dt><i class="fa fa-user"></i> Author</dt>
+        <dd><a href="/blog/author/devlead">devlead</a></dd>
+</dl>
+            <div>
+                <p>Version <strong>0.19.0</strong> of LitJSON has been released. Take it for a spin and give us feedback on our <a href="https://github.com/LitJSON/litjson/discussions/158">discussion board</a>.</p>
+<p>This release includes new features, improvements, and bug fixes since the <a href="/blog/2022/03/litjson-v0.18.0-released">LitJSON 0.18.0 release</a>! 🚀</p>
+<h3 id="highlights-of-this-release">Highlights of this release</h3>
+<ul>
+<li>.NET 8 Support</li>
+<li>LitJson.Source</li>
+</ul>
+<h3 id="net-8-support">.NET 8 Support</h3>
+<p>LitJSON adds the <code>net8.0</code> target framework moniker which now means it supports the following frameworks</p>
+<ul>
+<li>.NET 8</li>
+<li>.NET 6</li>
+<li>.NET Standard 2.1</li>
+<li>.NET Standard 2.0</li>
+<li>.NET Standard 1.5</li>
+<li>.NET Framework 4.8</li>
+<li>.NET Framework 4.5</li>
+<li>.NET Framework 4.0</li>
+<li>.NET Framework 3.5 (including SQLCLR)</li>
+<li>.NET Framework 2.0</li>
+<li>Mono 4.4.2 and above</li>
+</ul>
+<h3 id="litjson.source">LitJson.Source</h3>
+<p>Which 0.19.0 we also ship <a href="https://www.nuget.org/packages/LitJson.Source">LitJson.Source</a>, which is a source code NuGet package, which means LitJSON gets compiled and embedded with your application/assembly. Useful if you need a zero-dependency JSON serializer within your own code.</p>
+<h3 id="contributors">Contributors</h3>
+<p>This release was made possible thanks to the contribution of these awesome members of the community listed below:</p>
+<ul>
+<li><a href="https://github.com/devlead">devlead</a></li>
+<li>Dave Black</li>
+<li><a href="https://github.com/udlose">udlose</a></li>
+</ul>
+<p>Full details of everything that was included in this release can be seen below.</p>
+<!--excerpt-->
+<h3 id="issues">Issues</h3>
+<p>As part of this release we had <a href="https://github.com/LitJSON/litjson/milestone/2?closed=1">10 issues</a> closed.</p>
+<p><strong>enhancement</strong></p>
+<ul>
+<li><a href="https://github.com/LitJSON/litjson/issues/154"><strong>#154</strong></a> Update System.Reflection.TypeExtensions to 4.7.0.</li>
+<li><a href="https://github.com/LitJSON/litjson/issues/153"><strong>#153</strong></a> Update System.Collections.*  to 4.3.0.</li>
+<li><a href="https://github.com/LitJSON/litjson/issues/146"><strong>#146</strong></a> Add .NET 8 and update to .NET 8.0.100 SDK.</li>
+</ul>
+<p><strong>bug</strong></p>
+<ul>
+<li><a href="https://github.com/LitJSON/litjson/issues/143"><strong>#143</strong></a> Race conditions affecting JsonMapper and its usage of static members w/o synchronization.</li>
+</ul>
+
+            </div>
+        <hr />
         <h2><a href="/blog/2022/03/litjson-v0.18.0-released">Litjson 0.18.0 released</a></h2>
 <dl class="dl-horizontal">
     <dt><i class="fa fa-calendar"></i> Published</dt>
@@ -139,12 +198,7 @@
 </dl>
             <div>
                 <p>Version 0.18.0 of LitJSON has been released.</p>
-<p>This version is built using .NET 6 SDK and adds .NET 6 &amp; .NET Standard 2.1 framework monikers.</p>
-<p>Contributions were included from:</p>
-<ul>
-<li><a href="https://github.com/devlead">devlead</a></li>
-</ul>
-
+                <a href="/blog/2022/03/litjson-v0.18.0-released">Read more...</a>
             </div>
         <hr />
         <h2><a href="/blog/2021/01/litjson-v0.17.0-released">Litjson 0.17.0 released</a></h2>
@@ -195,20 +249,6 @@
             <div>
                 <p>Version v0.15.0 of LitJSON has been released.</p>
                 <a href="/blog/2019/10/litjson-v0.15.0-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/blog/2019/09/litjson-v0.14.0-released">LitJSON v0.14.0 released</a></h2>
-<dl class="dl-horizontal">
-    <dt><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Wednesday, September 18, 2019</dd>
-        <dt><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/blog/Release-Notes">Release Notes</a></dd>
-            <dt><i class="fa fa-user"></i> Author</dt>
-        <dd><a href="/blog/author/devlead">devlead</a></dd>
-</dl>
-            <div>
-                <p>Version v0.14.0 of LitJSON has been released.</p>
-                <a href="/blog/2019/09/litjson-v0.14.0-released">Read more...</a>
             </div>
         <hr />
     <nav>
